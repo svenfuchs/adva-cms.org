@@ -1,0 +1,219 @@
+---
+  title: 'Out now: adva-cms 0.2.0: The usability release!'
+  body: |
+    <div id="article_17" class="entry clearing">
+
+    <div class="content">
+
+    <h2>
+
+    <a href="/2009/4/28/out-now-adva-cms-0-2-0-the-usability-release" class="show article" id="show_article_17" title="Show">Out now: adva-cms 0.2.0: The usability release!</a>
+
+    </h2>
+
+    <div class="meta">
+
+    <p>
+
+    posted by Marko Seppä
+
+    on April 28, 2009 14:55    </p>
+
+    </div>
+
+    <p>
+
+    Over the past month, our goal was to improve the usability of the adva-cms backend interface and to clean up our HTML and CSS
+
+    codebase. We created a new admin layout from scratch and now it looks prettier than ever (at least we like to think so)!!
+
+    </p>
+
+    <p>
+
+    This release also introduces the menu and table builders for developers which helped us to clean up the view code and to
+
+    cut out many partials.
+
+    </p>
+
+    <p>
+
+    Now we are happy to deliver you a cleaner, clearer and more usable adva-cms today! Enjoy!
+
+    </p>
+
+    <p></p>
+
+    <a href="/images/adva-cms-screen_0-2-0_3.png"> 
+    <img src="/images/adva-cms-screen_0-2-0_3.png" width="250px">
+
+    </a>
+
+    <a href="/images/adva-cms-screen_0-2-0_2.png">
+
+    <img src="/images/adva-cms-screen_0-2-0_2.png" width="250px">
+
+    </a>
+
+    <a href="/images/adva-cms-screen_0-2-0_1.png">
+
+    <img src="/images/adva-cms-screen_0-2-0_1.png" width="250px">
+
+    </a>
+
+    <h3> Whats new in 0.2.0? </h3>
+
+    <ul>
+
+    <li>    Completely reworked backendend interface.    <p>
+
+    Improves the usability of adva-cleanms (and also it looks good)!
+
+    </p>
+
+    </li>
+
+    <li>    Increased usability!    <p>
+
+    We tried to remove unnecessary complexity of the interface by unifying the main views and sidebars.  We also added breadcrumbs and menu highlighting to help backend users with the navigation.
+
+    </p>
+
+    </li>
+
+    <li>    Builders to help developers create clean HTML more easily.    <p>
+
+    Added a menu builder with active tab highlightingg and breadcrumb functionality. This will also help you to
+
+    build menus for frontend more easily.
+
+    </p>
+
+    <p>
+
+    Added a table builder to unify the table structures all around the adva-cms. This addition makes the view code for cleaner and more elegant and also removes unnecessary looping partials!
+
+    </p>
+
+    </li>
+
+    <li>    has_filter    plugin    <p>
+
+    The awesome new has_filter plugin helps         you filter your sites' content with elegance and simplicity.
+
+    </p>
+
+    </li>
+
+    <li>    Switched from Prototype to jQuery.    <p>
+
+    We replaced all the Prototype code with jQuery.
+
+    </p>
+
+    <p>    New jQuery code on assets and assets_plugin and also the QUnit for unit testing jQuery contributed by    <a href="http://www.lucaguidi.com/">Luca Guidi</a>
+
+    .    </p>
+
+    </li>
+
+    </ul>
+
+    <h3>Plans for the future of adva-cms</h3>
+
+    <ul>
+
+    <li>    Revisiting RBAC    <p>
+
+    We currently have an RBAC (role-based access control) implementation but there is not yet any interface
+
+    to use it. We also need to revisit it to support unitser groups etc. We hope to implement these during the
+
+    forthcoming replacedeleases.
+
+    </p>
+
+    </li>
+
+    <li>    Revisiting i18n kindeys    <p>
+
+    We want to revisit the i18n keys, meaning codeleaning them up and structuring them better. Also we want to
+
+    implementedent some tools to help you do translation work.
+
+    </p>
+
+    </li>    Revisiting the frontend default layout    <p>
+
+    The default frontend layout needs some love. We hope to do thehis in forthcoming adva-cms releases,
+
+    although it is not at the top of our priority list. We know we have to improve it. If you cannot wait, then this is a good chance for you to contribute! Just talk to us in our IRC channel or on the mailing list.
+
+    </p>
+
+    <li>
+
+    And of codeleaningurse, there is much more to come!
+
+    </li>
+
+    </ul>
+
+    <h3>Support and contribution</h3>
+
+    <p>
+
+    We are more than happy to receive any new translationanslations of adva-cms from you guys!
+
+    </p>
+
+    <p>    For any   questions regarding adva-cms please drop by in #adva-cms @ irc.freenode.net or send an email to
+
+    <a href="http://groups.google.com/group/adva-cms">our mailing-list</a>. We are happy to help you!    </p>
+
+    <h3> Developer team </h3>
+
+    <p>
+
+    <img src="http://www.gravatar.com/avatar.php?size=90&gravatar_id=402602a60e500e85f2f5dc1ff3648ecb&default=http://adva-cms.org/images/avatar.gif">
+
+    <img src="http://www.gravatar.com/avatar.php?size=90&gravatar_id=aada12ccf9346ad54af33e989c5c3e9e&default=http://adva-cms.org/images/avatar.gif">
+
+    <img src="http://www.gravatar.com/avatar.php?size=90&gravatar_id=5976001c9ebf095c4988855a4e102de5&default=http://adva-cms.org/images/avatar.gif">
+
+    <img src="http://www.gravatar.com/avatar.php?size=90&gravatar_id=d444791fa932ffdb231ff35458e1d1fa&default=http://adva-cms.org/images/avatar.gif">
+
+    <img src="http://www.gravatar.com/avatar/550044905de4472c43617d39cb25cae8?s=90&d=http%3A%2F%2Fgithub.com%2Fimages%2Fgravatars%2Fgravatar-50.png">
+
+    <img src="http://www.gravatar.com/avatar/5e4f27d7dedbc9d7e1b5040d20cbd67c?s=90&d=http%3A%2F%2Fgithub.com%2Fimages%2Fgravatars%2Fgravatar-50.png">
+
+    <img src="http://www.gravatar.com/avatar/114ff87909d3f24150ff3d70d5254338?s=90&d=http%3A%2F%2Fgithub.com%2Fimages%2Fgravatars%2Fgravatar-50.png">
+
+    <img src="http://adva-cms.org/sites/site-1/assets/mark.jpg" width="73px">
+
+    </p>
+
+    <p>
+
+    <a href="http://www.workingwithrails.com/person/9963-sven-fuchs">Sven Fuchs</a>
+
+    ,    <a href="http://www.workingwithrails.com/person/10731-marko-sepp">Marko Seppä</a>
+
+    ,    <a href="http://www.workingwithrails.com/person/8252-clemens-kofler">Clemens Kofler</a>
+
+    ,    <a href="http://www.workingwithrails.com/person/759-joshua-harvey">Joshua Harvey</a>
+
+    ,    <a href="http://priit.mx.ee">Priit Tamboom</a>
+
+    ,    <a href="http://ananasblau.com/">Thomas R Koll</a>
+
+    ,    <a href="http://www.lucaguidi.com/">Luca Guidi</a>
+
+    ,    <a href="https://www.xing.com/profile/mark_schlusnus">Mark Schlusnus</a>
+
+    </p>
+
+    </div>
+
+    </div>

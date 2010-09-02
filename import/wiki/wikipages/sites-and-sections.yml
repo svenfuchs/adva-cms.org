@@ -1,0 +1,110 @@
+---
+  title: Sites and Sections
+  body: |
+    <div id="wikipage_9" class="entry clearing">
+
+    <div class="content">
+
+    <h2>Sites and sections</h2>
+
+    <p>A site maps to a domain name and consists of sections. Sections are
+
+    implemented as Rails Engines and provide functionality such as blog, wiki,
+
+    forum etc. Currently there are the section types Section, Blog, Wiki and
+
+    Forum.</p>
+
+    <p>
+
+    Sections can be arranged to a tree and map to the
+
+    <span class="caps">URL</span>
+
+    in an intuitive way.
+
+    Consider a section tree like:
+
+    </p>
+
+    <pre>+ home
+
+    + docs
+
+    + wiki
+
+    + api
+
+    + support
+
+    + forum
+
+    + faq
+
+    </pre>
+
+    <p>These sections would be accessible through the following URLs:</p>
+
+    <pre>/
+
+    /docs
+
+    /docs/wiki
+
+    /docs/api
+
+    /support
+
+    /support/forum
+
+    /support/faq
+
+    </pre>
+
+    <p>
+
+    The topmost section in a section tree, no matter how the rest of the
+
+    section tree looks like, is considered the root section and always maps to the    <span class="caps">URL</span>
+
+    </p>
+
+    <p>The section type “Section” itself defines a type of section that can hold one or many articles but won’t provide any of the usual blog functionality like index pages, archives etc. This type of section is known from Mephisto and makes sense for simple pages or static collections of some articles.</p>
+
+    </div>
+
+    <div class="wiki meta">
+
+    <ul class="links">
+
+    <li>
+
+    <a href="/wiki/wikipages">all pages</a>
+
+    </li>
+
+    <li>
+
+    <a href="/wiki">return to home</a>
+
+    </li>
+
+    <li class="visible_for user user-1 content-9-author section-2-moderator site-1-admin superuser">
+
+    <a href="/wiki/wikipages/sites-and-sections/edit">edit this page</a>
+
+    </li>
+
+    </ul>
+
+    <p>    revision: 1
+
+    last updated: May 29, 2009 13:18
+
+    by: Marko Seppä
+
+    </p>
+
+    </div>
+
+    </div>

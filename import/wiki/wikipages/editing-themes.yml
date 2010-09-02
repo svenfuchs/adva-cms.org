@@ -1,0 +1,68 @@
+---
+  title: Editing Themes
+  body: |
+    <div id="wikipage_4" class="entry clearing">
+
+    <div class="content">
+
+    <h2>Updating adva cms</h2>
+
+    <p>You can update an exiting adva-cms installation using git like this.</p>
+
+    <p>Stop your server (e.g. mongrel) and type on the command line:</p>
+
+    <pre>git pull
+
+    rake db:migrate:all
+
+    </pre>
+
+    <p>Restart your server (e.g. ruby script/server).</p>
+
+    <p>
+
+    Of course when you’ve deployed adva cms to a “real” server you most probably want to use
+
+    <a href="http://www.capify.org/">Capistrano</a>
+
+    for deployment and write a custom rake task for pulling from git and running the migrations like above.
+
+    </p>
+
+    </div>
+
+    <div class="wiki meta">
+
+    <ul class="links">
+
+    <li>
+
+    <a href="/wiki/wikipages">all pages</a>
+
+    </li>
+
+    <li>
+
+    <a href="/wiki">return to home</a>
+
+    </li>
+
+    <li class="visible_for user user-1 content-4-author section-2-moderator site-1-admin superuser">
+
+    <a href="/wiki/wikipages/updating-adva-cms/edit">edit this page</a>
+
+    </li>
+
+    </ul>
+
+    <p>    revision: 1
+
+    last updated: May 29, 2009 13:13
+
+    by: Marko Seppä
+
+    </p>
+
+    </div>
+
+    </div>

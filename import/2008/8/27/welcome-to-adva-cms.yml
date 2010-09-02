@@ -1,0 +1,138 @@
+---
+  title: Welcome to adva cms!
+  body: |
+    <div id="content">
+
+    <div id="article_13" class="entry clearing">
+
+    <div class="content">
+
+    <h2>
+
+    <a href="/2008/8/27/welcome-to-adva-cms" class="show article" id="show_article_13" title="Show">Welcome to adva cms!</a>
+
+    </h2>
+
+    <div class="meta">
+
+    <p>
+
+    posted by Christopher Floesss
+
+    on August 27, 2008 12:15    </p>
+
+    </div>
+
+    <p>
+
+    <strong>adva cms</strong>
+
+    is a cutting edge open source cms application plattform based on
+
+    <a href="http://rubyonrails.org/">Ruby on Rails</a>
+
+    and
+
+    <a href="http://rails-engines.org/">Rails Engines</a>
+
+    .
+
+    </p>
+
+    <p>It currently comes with core engines such as:</p>
+
+    <ul>
+
+    <li>
+
+    <strong>Cms</strong>
+
+    : build multiple sites with hierarchically organized sections
+
+    </li>
+
+    <li>
+
+    <strong>Blog</strong>
+
+    : blogging system heavily inspired by
+
+    <a href="http://mephistoblog.com/" title="Mephisto—The best blogging system ever">Mephisto</a>
+
+    </li>
+
+    <li>
+
+    <strong>Wiki</strong>
+
+    : a wiki engine inspired by
+
+    <a href="http://signalwiki.com/" title="Signal Wiki - About">Signal Wiki</a>
+
+    </li>
+
+    <li>
+
+    <strong>Forum</strong>
+
+    : a forum system inspired by
+
+    <a href="http://beast.caboo.se/">Beast</a>
+
+    </li>
+
+    </ul>
+
+    <p>
+
+    Read more about
+
+    <a href="http://adva-cms.org/wiki" title="adva cms">the concept behind adva-cms</a>
+
+    on the wiki.
+
+    </p>
+
+    <p>Different from other Rails applications the all-engines approach of adva cms allows you to build your own applications on top of it. It also makes it very flexible and extensible: our plan is to make it possible to only pick those engines/features that you really need for your application and omit the rest. As they are still all designed to work together seemlessly and reuse each others functionality the whole plattform feels much more consistent to a collection of similar but separate Rails applications.</p>
+
+    <p>
+
+    We've put together a brief overview about the most important engines that are already in adva cms here:
+
+    <a href="/wiki/pages/adva-cms-engines-overview">adva cms engines overview</a>
+
+    .
+
+    </p>
+
+    <p>Also you can read more about adva cms on the wiki here:</p>
+
+    <ul>
+
+    <li>
+
+    <a href="/wiki/pages/getting-started">Getting started</a>
+
+    (Download &amp; install)
+
+    </li>
+
+    <li>
+
+    <a href="/wiki/pages/sites-and-sections">Sites and sections</a>
+
+    </li>
+
+    <li>
+
+    <a href="/wiki/pages/editing-themes">Editing themes</a>
+
+    </li>
+
+    </ul>
+
+    </div>
+
+    </div>
+
+    </div>

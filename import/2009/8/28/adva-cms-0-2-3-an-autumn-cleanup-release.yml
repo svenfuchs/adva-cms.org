@@ -1,0 +1,280 @@
+---
+  title: 'adva-cms 0.2.3: an autumn cleanup release'
+  body: |
+    <div id="article_43" class="entry clearing">
+
+    <div class="content">
+
+    <h2>
+
+    <a href="/2009/8/28/adva-cms-0-2-3-an-autumn-cleanup-release" class="show article" id="show_article_43" title="Show">adva-cms 0.2.3, an autumn cleanup release</a>
+
+    </h2>
+
+    <div class="meta">
+
+    <p>
+
+    posted by Clemens Koffler
+
+    on August 28, 2009 14:30    </p>
+
+    </div>    This month we have a release that contains tons of small changes and refactorings. We basically cleaned up the adva-cms code by removing legacy code and improving the quality of code where we found some code smells. We have also put some effort into making the adva-cms test suite more flexible when working with custom apps. There are a bunch of bug fixes again and also a long requested feature for site finding is now implemented. Oh, and we have cooler help hints now, too!    <p></p>
+
+    <h3>Whats new in 0.2.3 then?</h3>
+
+    <ul>
+
+    <h4>Site#find_by_host! behaviour change ... </h4>
+
+    <ul>
+
+    <li>
+
+    Our users have been requesting this feature for a long time and now it is here: When there is only one site installed and adva-cms is running in single site mode the Site#find_by_host! method returns the first site from the database. The functionality for multi site mode stays the same as it was.
+
+    </li>
+
+    </ul>
+
+    <h4>... more flexible tests ... </h4>
+
+    <ul>
+
+    <li>    Tests were refactored so that they are more flexible to use and they work better with the custom applications.    <ul>
+
+    <li>
+
+    Locale is reset to :en on a test environment. Testsest environment always runs tests against the English translations so we need to run them with English locale regardless of the custom app's locale.
+
+    </li>
+
+    <li>
+
+    Expanded 'with' testing plugin to allow :if => :condition. This allows us to skip some adva-cms tests if, for example, the default theme is not in use. Of course, you have to write tests for the custom apps frontend to cover skipped functionality.
+
+    </li>
+
+    <li>
+
+    Routing tests now have :default_routing_filters context to run the tests with the default routing filters.
+
+    </li>
+
+    <li>
+
+    Tests made presumptions about urls before - we changed this so they are more independent and do not rely on certain exact urls.
+
+    </li>
+
+    <li>
+
+    Controller actions are rescued with enrror pages in the test environment by a new context :rescue_action_in_public.
+
+    </li>
+
+    <li>
+
+    Extracted some matchy matchers from tests,by check them from engines/adva_cms/test/test_helper/extensions/matchy_adva_cms.rb and engines/adva_cms/test/test_helper/extensions/matchy.rb
+
+    </li>
+
+    <li>
+
+    We have some custom apps that run adva-cms tests in the context of a custom app, so we have confirmed that our test suite is more flexible now than it was before! We hope these changes help you, too, to run your application's tests with the adva-cms tests more easily!
+
+    </li>
+
+    </ul>
+
+    </li>
+
+    </ul>
+
+    <h4>... adva-toohemes ... </h4>
+
+    <ul>
+
+    <li>
+
+    There is no stupid forced cache folder under stylesheets and javascripts anymore! This awesome "feature" from the past created extra frustration to the image links in your CSS, because the cached file was forced to be one folder deeper than before.
+
+    </li>
+
+    <li>
+
+    adva-themes assets cache clearing only removes files that have cached_ on their file name, also everything under a cached folder will be removed when clearing the cache. So when you want to cache your theme asset files, remember to use correct names / folder for the cached files!
+
+    </li>
+
+    <li>
+
+    Cached asset for all the themes of a site are cleared when you click 'clear all' on site cache settings. This might sound obvious but previously there was no way of clearing the theme asset cache from the UI.
+
+    </li>
+
+    </ul>
+
+    <h4>... cooler help hints ... </h4>
+
+    <ul>
+
+    <li>    We started to use
+
+    <a href="http://craigsworks.com/projects/qtip/">qTip</a>
+
+    - a jQuery tooltip library - for displaying our help hints and they are much cooler than before! Enjoy.    </li>
+
+    </ul>
+
+    <h4>... adva-cms got little more flexible again ... </h4>
+
+    <ul>
+
+    We improved the modularity of adva-cms by moving some initializers out of enginesgines where they do not belong. For example, we removed the photo initializer from adva_comments and added a comment initializer to adva_photos instead, because it just makes more sense this way. An even more noticeable change is that adva_blog now has its own blog_articles_controller because we didn't want the adva_cms engine to know anything about blogs.
+
+    </ul>
+
+    <h4>.. :max_display_level menu option reverted ... </h4>
+
+    <ul>
+
+    <li>
+
+    We revertedd :max_display_level menu option we introduced on the previous release.
+
+    </li>
+
+    </ul>
+
+    <h4>... and some bug fixes</h4>
+
+    <ul>
+
+    <li>Issue with Rubypants is fixed and the library is updated</li>
+
+    <li>Fixed the cancel link on theme file edit page</li>
+
+    <li>Fixed text filter to work with translated columns</li>
+
+    <li>Fixed hast_filter to work with upcased text</li>
+
+    <li>Fixed force_html routing filter to work with root_urls</li>
+
+    <li>Fixed broken set_user_cookie! method from authentication library</li>
+
+    <li>Fixed adva_url_history</li>
+
+    <li>Fixed a bug with filtering set path on admin area with locale on url</li>
+
+    <li>Stubbed the URI opening method from adva_newsletter test</li>
+
+    <li>Confirmation code fields are not shown anymore if user is logged in on password/edit</li>
+
+    <li>We want only set section_id for page cache references if section is actually set</li>
+
+    <li>adva-cms mailer initializer fixed</li>
+
+    <li>Cookies are only set when user is available</li>
+
+    <li>Building a menu path for unsaved sections is now prevented</li>
+
+    <li>Articles_controller#current_resource fixed, current resource is the section when the section is in single_article_mode</li>
+
+    <li>[action]_url methods are now passing the :only_path option</li>
+
+    <li>Improved cache_references plugin to not overwrite existing references when calling caches_page_with_references/tracks_cache_references again.</li>
+
+    <li>Cell support for fckeditor fixed</li>
+
+    </ul>
+
+    <h3>Plans for the future</h3>
+
+    <ul>
+
+    <li>
+
+    Revisiting RBAC. This one is currently in development and it will be released in one of the following releases!
+
+    </li>
+
+    <li>
+
+    Revisiting i18n keys
+
+    </li>    Revisiting there frontend default layout    <li>
+
+    Namespacing adva-cms to prevent name clashes with your app
+
+    </li>
+
+    <li>
+
+    And much more!
+
+    </li>
+
+    </ul>
+
+    <h3>Support and contribution</h3>
+
+    <p>    We are still more than happy to receive any new translatedlations of adva-cms from you guys! Also, you can contribute to our
+
+    <a href="http://groups.google.com/group/adva-cms/web/guide?hl=en">guide</a>
+
+    !    </p>
+
+    <p>    For any questions regarding adva-cms please drop by in #adva-cms @ irc.freenode.net or send an email to
+
+    <a href="http://groups.google.com/group/adva-cms">our mailing-list</a>
+
+    We are happy to help you out!    </p>
+
+    <h3> Developer team </h3>
+
+    <p>
+
+    <img src="http://www.gravatar.com/avatar.php?size=90&gravatar_id=402602a60e500e85f2f5dc1ff3648ecb&default=http://adva-cms.org/images/avatar.gif">
+
+    <img src="http://www.gravatar.com/avatar.php?size=90&gravatar_id=aada12ccf9346ad54af33e989c5c3e9e&default=http://adva-cms.org/images/avatar.gif">
+
+    <img src="http://www.gravatar.com/avatar.php?size=90&gravatar_id=5976001c9ebf095c4988855a4e102de5&default=http://adva-cms.org/images/avatar.gif">
+
+    <img src="http://www.gravatar.com/avatar.php?size=90&gravatar_id=d444791fa932ffdb231ff35458e1d1fa&default=http://adva-cms.org/images/avatar.gif">
+
+    <img src="http://www.gravatar.com/avatar/550044905de4472c43617d39cb25cae8?s=90&d=http%3A%2F%2Fgithub.com%2Fimages%2Fgravatars%2Fgravatar-50.png">
+
+    <img src="http://www.gravatar.com/avatar/5e4f27d7dedbc9d7e1b5040d20cbd67c?s=90&d=http%3A%2F%2Fgithub.com%2Fimages%2Fgravatars%2Fgravatar-50.png">
+
+    <img src="http://www.gravatar.com/avatar/114ff87909d3f24150ff3d70d5254338?s=90&d=http%3A%2F%2Fgithub.com%2Fimages%2Fgravatars%2Fgravatar-50.png">
+
+    <img src="http://adva-cms.org/sites/site-1/assets/mark.jpg" width="73px">
+
+    </p>
+
+    <p>
+
+    <a href="http://www.workingwithrails.com/person/9963-sven-fuchs">Sven Fuchs</a>
+
+    ,    <a href="http://www.workingwithrails.com/person/10731-marko-sepp">Marko Seppä</a>
+
+    ,    <a href="http://www.workingwithrails.com/person/8252-clemens-kofler">Clemens Kofler</a>
+
+    ,    <a href="http://www.workingwithrails.com/person/759-joshua-harvey">Joshua Harvey</a>
+
+    ,    <a href="http://priit.mx.ee">Priit Tamboom</a>
+
+    ,    <a href="http://ananasblau.com/">Thomas R Koll</a>
+
+    ,    <a href="http://www.lucaguidi.com/">Luca Guidi</a>
+
+    ,    <a href="https://www.xing.com/profile/mark_schlusnus">Mark Schlusnus</a>
+
+    </p>
+
+    </ul>
+
+    </div>
+
+    </div>

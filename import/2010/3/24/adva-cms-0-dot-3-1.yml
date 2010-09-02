@@ -1,0 +1,180 @@
+---
+  title: adva-cms 0.3.1
+  body: |
+    <div id="article_47" class="entry clearing">
+  
+    <div class="content">
+  
+    <h2>
+  
+    <a href="/2010/3/24/adva-cms-0-3-1" class="show article" id="show_article_47" title="Show">adva-cms 0.3.1</a>
+  
+    </h2>
+  
+    <div class="meta">
+  
+    <p>
+  
+    posted by Christopher Floess
+  
+    on March 24, 2010 12:24
+  
+    </p>
+  
+    </div>
+  
+    <p>
+  
+    A lot of small 		things have changed in adva_cms since 0.3.0!
+  
+    </p>
+  
+    <p>
+  
+    First and most visibly, two plugins have been added and one engine got
+  
+    transformed into a plugin.  But there are many fixes and tweaks that make
+  
+    adva_cms better.
+  
+    </p>
+  
+    <p></p>
+  
+    <p>
+  
+    A lot of small things have changed in adva_cms since 0.3.0!
+  
+    </p>
+  
+    <p>
+  
+    First and most visibly, two plugins have been added and one engine got
+  
+    transformed into a plugin.  But there are many fixes and tweaks that make
+  
+    adva_cms better.
+  
+    </p>
+  
+    <p>
+  
+    A while ago, FCKEditor got renamed, updated and improved.  Now you can
+  
+    have the newest version, the CKEditor, fully integrated into adva_cms with a
+  
+    simple
+  
+    <code>rake adva:install plugin=adva_ckeditor</code>
+  
+    .  If you have Adva::Assets
+  
+    installed, you can upload your pictures through the editor.  However, you
+  
+    can also drag and drop already uploaded images from the sidebar into your
+  
+    articles.
+  
+    </p>
+  
+    <p>
+  
+    If you want a more secure template, you can now use the safemode-plugin.
+  
+    This registers "serb" as a TemplateHandler, which prevents malicious
+  
+    commands from being executed inside the template.  So, if you download a
+  
+    theme, just rename it from *.erb to *.serb and see if an error occurs.
+  
+    Integration with Adva::Themes is still pending, but the groundwork is there.
+  
+    </p>
+  
+    <p>
+  
+    Also new in the plugin directory is adva_contact_mails, which replaces the
+  
+    engine of the same name.
+  
+    </p>
+  
+    <p>
+  
+    Those three plugins (well, two essentially) are not nearly everything.
+  
+    Every site now has a locale setting which sets the default language of the
+  
+    frontend.  You can also change the language of the backend without tinkering
+  
+    with the URL, just by using from a drop down.
+  
+    </p>
+  
+    <p>
+  
+    While we're at languages and translations: The work flow of translating an
+  
+    Article got improved.  After editing an article, you stay in the chosen
+  
+    language.  If no language is chosen, the language of the backend is
+  
+    preselected.  Of course, the same applies for creating new articles.
+  
+    </p>
+  
+    <p>
+  
+    The blogs and categories now have auto-discovery links (aka atom feeds) by
+  
+    default.
+  
+    </p>
+  
+    <p>
+  
+    Under the hood, things also got cleaner again.  Some Dependencies have been
+  
+    removed which should make the project somewhat more self-contained.  The
+  
+    test suite, which reported error in some circumstances under Rails 2.3.5 now
+  
+    runs seamlessly again with 2.3.4 and 2.3.5.
+  
+    </p>
+  
+    <p>
+  
+    Cells got some attention too, so they are more robust and are integrated better with the caching.
+  
+    </p>
+  
+    <p>
+  
+    Thanks to Joseph Ridgway, the email-notifications about newly created
+  
+    articles or comments can be turned off or on, depending on your taste.
+  
+    Before that, they were always enabled.
+  
+    </p>
+  
+    <p>
+  
+    We could go on listing all the small changes and bug fixes now, instead
+  
+    we just want to highlight that caching got better. Also thanks to Alan
+  
+    Gutierrez for sending a bug fix patch.
+  
+    </p>
+  
+    <p>
+  
+    Details can be found in the changelog as usual.
+  
+    </p>
+  
+    </div>
+  
+    </div>

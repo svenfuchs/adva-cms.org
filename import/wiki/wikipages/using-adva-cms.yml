@@ -1,0 +1,58 @@
+---
+  title: Using adva-cms
+  body: |
+    <div id="wikipage_7" class="entry clearing">
+
+    <div class="content">
+
+    <h2>Using adva_cms</h2>    Start server by using the
+
+    <span class="caps">DOS</span>
+
+    window PC or Terminal (MAC). Enter    <pre>cd adva_cms (or other folder name)</pre>
+
+    for mac:
+
+    <pre>script/server</pre>
+
+    for windows:
+
+    <pre>ruby script/server</pre>    Now you can use adva cms in your browser window using the address:    <pre>localhost:3000/admin</pre>
+
+    </div>
+
+    <div class="wiki meta">
+
+    <ul class="links">
+
+    <li>
+
+    <a href="/wiki/wikipages">all pages</a>
+
+    </li>
+
+    <li>
+
+    <a href="/wiki">return to home</a>
+
+    </li>
+
+    <li class="visible_for user user-1 content-7-author section-2-moderator site-1-admin superuser">
+
+    <a href="/wiki/wikipages/using-adva-cms/edit">edit this page</a>
+
+    </li>
+
+    </ul>
+
+    <p>    revision: 1
+
+    last updated: May 29, 2009 13:16
+
+    by: Marko Seppä
+
+    </p>
+
+    </div>
+
+    </div>

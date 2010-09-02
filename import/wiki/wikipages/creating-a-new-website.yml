@@ -1,0 +1,74 @@
+---
+  title: Creating a new website
+  body: |
+    <div id="wikipage_8" class="entry clearing">
+  
+    <div class="content">
+  
+    <h2>Creating a new website</h2>  Select
+  
+    <pre>site overview</pre>
+  
+    at the right top corner selection box.
+  
+    <br>  A page appears that shows an overwiew over all your existing websites, and a button to create a new one. Click this button.
+  
+    <br>  In the form displayed, fill in the parameters for your new site.
+  
+    <pre>Akismet</pre>
+  
+    and
+  
+    <pre>Defensio</pre>
+  
+    are Anti Spam tools (to prevent any unknown users to write anything unwanted about your contributions). Your basic site is ready to be modified for your purpose.
+  
+    <br>In case you already have sites listed in your site overview: before you create a new site, you need to change the number of your localhost for your exiting site(s)	<pre>
+  
+    <a href="http://localhost:3000">http://localhost:3000</a>
+  
+    </pre>
+  
+    to	<pre>
+  
+    <a href="http://localhost:3xxx">http://localhost:3xxx</a> (another number)
+  
+    </pre>
+  
+    or you have to start an new local server for the new site. Thus this site starts completely from scratch with the default templates.	</div>
+  
+    <div class="wiki meta">
+  
+    <ul class="links">
+  
+    <li>
+  
+    <a href="/wiki/wikipages">all pages</a>
+  
+    </li>
+  
+    <li>
+  
+    <a href="/wiki">return to home</a>
+  
+    </li>
+  
+    <li class="visible_for user user-1 content-8-author section-2-moderator site-1-admin superuser">
+  
+    <a href="/wiki/wikipages/creating-a-new-website/edit">edit this page</a>
+  
+    </li>
+  
+    </ul>
+  
+    <p>	revision: 1
+  
+    last updated: May 29, 2009 13:17
+  
+    by:
+  
+    </p>
+  
+    </div>
+  
+    </div>

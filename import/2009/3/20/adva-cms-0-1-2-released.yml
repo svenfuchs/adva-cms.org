@@ -1,0 +1,110 @@
+---
+  title: adva-cms 0.1.2 released!
+  body: |
+    <div id="article_16" class="entry clearing">
+
+    <div class="content">
+
+    <h2>
+
+    <a href="/2009/3/20/adva-cms-0-1-2-released" class="show article" id="show_article_16" title="Show">adva-cms 0.1.2 released!</a>
+
+    </h2>
+
+    <div class="meta">
+
+    <p>
+
+    posted by Marko Seppä
+
+    on March 20, 2009 08:29    </p>
+
+    </div>
+
+    <p>Yet another interation of adva-cms development has passed and we are proud to announce a new release. Release 0.1.2 includes new features and improvements like compatibility with rails 2.3, model translations by Joshua Harvey, more decoupled engines that allow installation of specific engines and lots of other new functionality and bug fixes!</p>
+
+    <p></p>
+
+    <h3>So, what is new in adva-cms 0.1.2 release?</h3>    One month has passed again and here are the new features we have brought to you:    <ul>
+
+    <li>adva-cms supports rails 2.3.2</li>
+
+    <li>
+
+    <a href="http://www.workingwithrails.com/person/759-joshua-harvey">Joshua Harvey</a>
+
+    implemented model translations, so now you can also translate the content of the adva-cms, not just the interface! New plugin globalize2_versioning was introduced and it is replacement for acts_as_versioned plugin that clashed with model translation code.
+
+    </li>
+
+    <li>
+
+    Decoupled engines. This makes it now possible to install only the engines you need for your application. adva-cms is still fetched to vendor/adva but only core engines are installed (read, symlinked in unix and mac osx and in windows copied) to the vendor/plugins. You can install any engine additional to core to your application by following the instructions in adva-cms
+
+    <a href="http://github.com/svenfuchs/adva_cms/tree/0.1.2#readme">readme</a>
+
+    .
+
+    </li>
+
+    <li>Sections are now Pages. Pages have a single article mode that is good for a single static page and multi-article mode that works like the Section worked before. Also the concept of a page is more easily understandable than a section.</li>
+
+    </ul>
+
+    <h3>And what is there in a future?</h3>
+
+    <ul>
+
+    <li>We are revisiting the RBAC (role based access control) for adva-cms and we hope to get it out for our next release.</li>
+
+    <li>Backend interface will be redone and made better during the next releases. </li>
+
+    </ul>
+
+    <h3>Support and contribution</h3>
+
+    <p>
+
+    For any questions regarding adva-cms please drop by in #adva-cms @ irc.freenode.net or send an email to
+
+    <a href="http://groups.google.com/group/adva-cms">our mailing-list</a>. We are happy to help you!
+
+    </p>
+
+    <h3>Developer team</h3>
+
+    <p>
+
+    <img src="http://www.gravatar.com/avatar.php?size=80&gravatar_id=402602a60e500e85f2f5dc1ff3648ecb&default=http://adva-cms.org/images/avatar.gif" width="50/">
+
+    <img src="http://www.gravatar.com/avatar.php?size=80&gravatar_id=aada12ccf9346ad54af33e989c5c3e9e&default=http://adva-cms.org/images/avatar.gif" width="50/">
+
+    <img src="http://www.gravatar.com/avatar.php?size=80&gravatar_id=5976001c9ebf095c4988855a4e102de5&default=http://adva-cms.org/images/avatar.gif" width="50/">
+
+    <img src="http://www.gravatar.com/avatar.php?size=80&gravatar_id=d444791fa932ffdb231ff35458e1d1fa&default=http://adva-cms.org/images/avatar.gif" width="50/">
+
+    <img src="http://www.gravatar.com/avatar/550044905de4472c43617d39cb25cae8?s=50&d=http%3A%2F%2Fgithub.com%2Fimages%2Fgravatars%2Fgravatar-50.png">
+
+    <img src="http://www.gravatar.com/avatar/5e4f27d7dedbc9d7e1b5040d20cbd67c?s=50&d=http%3A%2F%2Fgithub.com%2Fimages%2Fgravatars%2Fgravatar-50.png">
+
+    </p>
+
+    <p>
+
+    <a href="http://www.workingwithrails.com/person/9963-sven-fuchs">Sven Fuchs</a>
+
+    ,    <a href="http://www.workingwithrails.com/person/10731-marko-sepp">Marko Seppä</a>
+
+    ,    <a href="http://www.workingwithrails.com/person/8252-clemens-kofler">Clemens Kofler</a>
+
+    ,    <a href="http://www.workingwithrails.com/person/759-joshua-harvey">Joshua Harvey</a>
+
+    ,    <a href="http://priit.mx.ee">Priit Tamboom</a>
+
+    ,    <a href="http://ananasblau.com/">Thomas R Koll</a>
+
+    </p>
+
+    </div>
+
+    </div>
