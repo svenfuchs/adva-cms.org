@@ -1,0 +1,98 @@
+a {
+  color: #cc0000;
+}
+
+#header h1 {
+  float: left;
+  line-height: 36px;
+  margin: 24px 0px 20px 30px;
+  font-size: 28px;
+  color: #888;
+}
+#header h2 {
+  float: left;
+  line-height: 44px;
+  margin: 24px 0px 20px 10px;
+  font-size: 14px;
+  font-weight: normal;
+  color: #aaa;
+}
+
+#content h2 {
+  color: #666;
+}
+#content h2 a {
+  color: #666;
+}
+#content ul, #content ol {
+  margin: 0px 0px 0px 8px;
+  padding: 0px 0px 0px 8px;
+  list-style-type: circle;
+}
+#content .meta {
+  color: #aaa;
+}
+#content .meta a {
+  color: #aaa;
+}
+
+.wiki.meta {
+  margin-top: 24px;
+}
+#content .links {
+  margin: 0px;
+  padding: 0px;
+  list-style-type: none;
+}
+#content .links li {
+  float: left;
+  margin-left: 5px;
+}
+#content .links li:before {
+  content: " · ";
+}
+#content .links li:first-child {
+  margin-left: 0px;
+}
+#content .links li:first-child:before {
+  content: "";
+}
+#content .links {
+  display: block;
+  zoom: 1; /* gives layout to ie? */
+}
+#content .links:after {
+  content: ".";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+* html #content .links {
+  height: 1%;
+}
+
+#sidebar {
+  color: #666;
+}
+#sidebar h4 {
+  font-size: 15px;
+  color: #444;
+}
+
+form {
+  padding: 20px;
+  border-top: 6px solid #bbb;
+  background-color: #f6f6f6;
+}
+label {
+  color: #444;
+}
+input[type="text"],
+input[type="password"],
+textarea {
+  border: 1px solid #aaa;
+}
+textarea {
+  font: 13px normal "Lucida Grande",Lucida,Helvetica,sans-serif;
+}

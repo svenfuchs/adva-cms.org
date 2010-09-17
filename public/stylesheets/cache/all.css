@@ -1,0 +1,332 @@
+html, body {
+	padding: 0px;
+	margin: 0px;
+	color: #333;
+	background-color: #f6f6f6;
+ 	font: 13px "Lucida Grande",Lucida,Helvetica,sans-serif;
+	line-height: 1.5em;
+}
+img {
+	border-width: 0px;
+}
+a { 
+	outline: none; 
+}
+
+.clearing {
+  display: block;
+  zoom: 1; /* gives layout to ie? */
+}
+.clearing:after {
+  content: ".";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+* html .clearing {
+  height: 1%;
+}
+.inline {
+	display: inline !important;
+}
+.alt {
+	background-color: #f0f0f0 !important;
+}
+.empty {
+  padding: 10px;
+  padding-left: 35px;
+  background: #eee url(../images/minus.gif) 10px 50% no-repeat; 
+}
+.divider {
+	border-top: 1px solid #ccc;
+	padding: 20px 0px 0px 12px;
+}
+
+/* flash, errors, notices */
+
+#flashes div {
+	line-height: 40px;
+	display: none;
+}
+#flash-notice {
+  background: #cfc;
+  color: #051;
+  text-align: center;
+}
+#flash-error {
+  background: #F69A91;
+  color: #510;
+  text-align: center;
+}
+
+#header {
+  position: relative;
+  background: url(../images/header_bg.png) repeat-x left -25px;
+  height: 100px;
+}
+#main {
+  position: absolute;
+  clear: both;
+  width: 68%;
+  border-right: 3px solid #e6e6e6;
+  border-bottom: 3px solid #e6e6e6;
+  background-color: #fff;
+  padding-bottom: 40px;
+}
+#flashes {
+  margin-top: -16px;
+  /*height: 40px;*/
+  height: 16px;
+  background-color: white;
+  text-align: center;
+  font-weight: bold;
+}
+#content {
+  padding: 10px 30px 20px 30px;
+}
+#sidebar {
+  position: absolute;
+  left: 70%;
+  width: 27%;
+  margin-top: 10px;
+  /*padding-left: 30px;*/
+}
+
+a {
+  color: #cc0000;
+}
+
+#header h1 {
+  float: left;
+  line-height: 36px;
+  margin: 24px 0px 20px 30px;
+  font-size: 28px;
+  color: #888;
+}
+#header h2 {
+  float: left;
+  line-height: 44px;
+  margin: 24px 0px 20px 10px;
+  font-size: 14px;
+  font-weight: normal;
+  color: #aaa;
+}
+
+#content h2 {
+  color: #666;
+}
+#content h2 a {
+  color: #666;
+}
+#content ul, #content ol {
+  margin: 0px 0px 0px 8px;
+  padding: 0px 0px 0px 8px;
+  list-style-type: circle;
+}
+#content .meta {
+  color: #aaa;
+}
+#content .meta a {
+  color: #aaa;
+}
+
+.wiki.meta {
+  margin-top: 24px;
+}
+#content .links {
+  margin: 0px;
+  padding: 0px;
+  list-style-type: none;
+}
+#content .links li {
+  float: left;
+  margin-left: 5px;
+}
+#content .links li:before {
+  content: " · ";
+}
+#content .links li:first-child {
+  margin-left: 0px;
+}
+#content .links li:first-child:before {
+  content: "";
+}
+#content .links {
+  display: block;
+  zoom: 1; /* gives layout to ie? */
+}
+#content .links:after {
+  content: ".";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+* html #content .links {
+  height: 1%;
+}
+
+#sidebar {
+  color: #666;
+}
+#sidebar h4 {
+  font-size: 15px;
+  color: #444;
+}
+
+form {
+  padding: 20px;
+  border-top: 6px solid #bbb;
+  background-color: #f6f6f6;
+}
+label {
+  color: #444;
+}
+input[type="text"],
+input[type="password"],
+textarea {
+  border: 1px solid #aaa;
+}
+textarea {
+  font: 13px normal "Lucida Grande",Lucida,Helvetica,sans-serif;
+}
+
+#sections {
+	position: absolute;
+	bottom: 32px;
+	right: 50px;
+	margin: 0px;
+	padding: 0px;
+	list-style-type: none;
+}
+#sections li {
+	float: left;
+	margin: 0px 0px 0px 5px;
+	padding: 5px 15px;
+	list-style-type: none;
+	background-color: #f0f0f0;
+}
+#sections li a {
+	font-weight: bold;
+	font-size: 12px;
+	color: #888;
+	text-decoration: none;
+	text-shadow: #fff 1px 1px;
+}
+
+/* sidebar */
+
+ul.categories ul {
+	padding-left: 20px; 
+}
+
+/* COMMENTS */
+
+#comments {
+	padding-bottom: 9px;
+}
+#comments h3 {
+  font-size: 18px; 
+  line-height: 18px; 
+  margin: 18px 0 18px 0;
+}
+#comments ol {
+	list-style-type: none;
+	margin-left: 0;
+}
+#comments ol li {
+	padding-bottom: 17px;
+	margin-bottom: 18px;
+	border-bottom: 1px solid #bbb;
+}
+#comments .meta p {
+	margin: 0;
+}
+#comments .comment {
+	border-bottom: 1px solid #bbb;
+}
+
+/* COMMENTS FORM */
+
+#comment_form {
+	padding-bottom: 9px;
+	margin-bottom: 26px;
+}
+#comment_user {
+	float: right;
+	margin-top: 3px;
+}
+#comment_form label {
+	display: block;
+	float: left;
+	width: 100px;
+}
+#comment_form input {
+	width: 180px;
+}
+#comment_form textarea {
+	height: 150px;
+	width: 99%;
+}
+
+/* FORM */
+
+fieldset {
+	border-width: 0px;
+}
+input[type=text],
+input[type=password],
+textarea {
+	border: 1px solid #888;
+}
+input[type=text],
+input[type=password] {
+	height: 20px;
+	padding: 0 4px;
+	margin: -2px 12px -2px 0;
+}
+input[type=text].wide,
+input[type=password].wide {
+	width: 80%;
+}
+textarea {
+	width: 80%;	
+	height: 270px;
+	padding: 3px 3px;
+	margin: -2px 0;
+}
+label {
+	display: block;
+	width: 100px;
+	float: left;
+	clear: both;
+}
+label.inline {
+	display: inline;
+	float: none;
+	clear: none;
+	padding-right: 12px;
+}
+.clearing {
+  display: block;
+  zoom: 1; /* gives layout to ie? */
+}
+.clearing:after {
+  content: ".";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+* html .clearing {
+  height: 1%;
+}
+
+p.buttons {
+	margin-left: 100px;
+}
+.hint {
+	color: #aaa;
+	font-size: 11px;
+}

@@ -1,0 +1,12 @@
+<div id="<%= dom_id @page %>" class="entry clearing">
+  <div class="content">
+    <%= @page.article.body.html_safe %>
+  </div>
+</div>
+
+<% content_for :sidebar do %>
+  <h4>Related Pages</h4>
+  <% @page.parent.children.each do |p| %>
+    <%= link_to p.title, "/#{p.path}" %><br>
+  <%end %>
+<% end %>

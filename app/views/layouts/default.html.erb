@@ -1,0 +1,50 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8" />   
+    <title><%= site.title %></title>
+    <%= stylesheet_link_tag 'default', 'layout', 'styles', 'widgets', 'comments', 'forms' %>
+    <%= javascript_include_tag :common, :default %>
+    <%= yield :head %>
+    <%# authorize_elements %>
+  </head>
+  <body>   
+    <div id="header">
+      <h1><%= site.title %></h1>
+      <h2><%= site.subtitle %></h2>
+      <ul id="sections">
+        <li class="item active">
+          <a href="/" id="show_section">Blog</a>
+        </li>
+        <li class="item">
+          <a href="/wiki" id="show_section">Wiki</a>
+        </li>
+      </ul>
+    </div>
+    
+    <div id="main">
+      <div id="flashes">
+      </div>
+      <div id="content">
+        <%= yield %>
+      </div>
+    </div>
+
+    <div id="sidebar">
+      <p>
+        adva-cms is an open source cms platform based on Ruby on Rails and Rails Engines.
+      </p>
+      <h4>Resources</h4>
+      <p>
+        <a href="http://github.com/svenfuchs/adva_cms">GitHub Repository</a><br>
+        <a href="http://artweb-design.lighthouseapp.com/projects/13992-adva_cms">Lighthouse Tracker</a><br>
+        <a href="http://groups.google.com/group/adva-cms">Google Mailinglist</a><br>
+        <a href="irc://irc.freenode.net#adva-cms">irc.freenode.net#adva-cms</a>
+      </p>
+      
+      <%= yield :sidebar %>
+    </div>
+    
+    <%#= yield :footer or render :partial => 'shared/footer' %>
+  </body>
+</html>

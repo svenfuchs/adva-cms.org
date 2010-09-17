@@ -1,0 +1,28 @@
+#sections {
+	position: absolute;
+	bottom: 32px;
+	right: 50px;
+	margin: 0px;
+	padding: 0px;
+	list-style-type: none;
+}
+#sections li {
+	float: left;
+	margin: 0px 0px 0px 5px;
+	padding: 5px 15px;
+	list-style-type: none;
+	background-color: #f0f0f0;
+}
+#sections li a {
+	font-weight: bold;
+	font-size: 12px;
+	color: #888;
+	text-decoration: none;
+	text-shadow: #fff 1px 1px;
+}
+
+/* sidebar */
+
+ul.categories ul {
+	padding-left: 20px; 
+}
