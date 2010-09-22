@@ -2,261 +2,152 @@
   title: 'adva-cms 0.2.2: The bug hunter release'
   body: |
     <div id="article_42" class="entry clearing">
-
     <div class="content">
-
     <h2>
-
     <a href="/2009/7/31/adva-cms-0-2-2-the-bug-hunter-release" class="show article" id="show_article_42" title="Show">adva-cms 0.2.2: The bug hunter release</a>
-
     </h2>
-
     <div class="meta">
-
     <p>
-
     posted by Marko Seppä
-
-    on July 31, 2009 12:16    </p>
-
-    </div>    Thanksis month we are happy to announce a bug fix release for the adva-cms; that's why we call this release "the bug hunter release". It has bunch of bug fixes and it also adds some minor features and changes like 'email notification switch' (which allows you to disable and enable email notifications per site), translatable section and category titles, and much more. We also improved adva-themes and the result is more robust and user friendly theming experience for you.    <p></p>
-
-    <h3>So whats changed?</h3>
-
-    <ul>
-
-    <h4>Translatable section and category titles ... </h4>
-
-    <ul>
-
-    <li>We now support the translation of section and category titles. If you are upgrading from old adva-cms version you most probably need to run a rake task 'rake adva:i18n:migrate_titles LOCALE=your_locale' to translate your current titles.
-
-    </li>
-
-    </ul>
-
-    <h4>... improved adva-themes ... </h4>
-
-    <ul>
-
-    <li>    adva-themes got some improvements.    <ul>
-
-    <li> Theme importing won't fail anymore   if you have your theme zipped with extra folder structure. This fixes the annoyance from Safari where downloading unzips the theme to a folder with the theme name and creates more deeply nested directory structure. Now you can safely zip this new folder and theme importing strips off the unnecessary directory structure. </li>
-
-    <li>Theme file names are now unique.</li>
-
-    <li>You can now upload multiple theme files at the same time.</li>
-
-    </ul>
-
-    </li>
-
-    </ul>
-
-    <h4>... unified file upload locations ... </h4>
-
-    <ul>
-
-    <li>
-
-    Previously, when you installed adva-cms on single site mode and uploaded some files to your site and later wanted to move to multi-site installation, you could not find your old files anymore. This sucks, so we unified the file upload paths between single and multi-site mode. And don't worry, we also have a migration that copies your old files to the new file structure if you are migrating from an old adva-cms release!
-
-    </li>
-
-    </ul>
-
-    <h4>... email notifications ... </h4>
-
-    <ul>
-
-    <li>Since we started to receive a couple of hundreds of 'an article has been updated' messages per day - we decide to add a feature to disable these notifications for each site. This is kind of quick solution since we want to add a feature later on that allows you to subscribe to notifications.    </li>
-
-    </ul>
-
-    <h4>... bunch of help hints ... </h4>
-
-    <ul>
-
-    <li>We added bunch of help hints to different form fields to help you with the confusing things on adva-cms. Also these hints should reveal some features that has been long existant but maybe a little bit hidden. Have fun finding them!
-
-    </li>
-
-    </ul>
-
-    <h4>... plain text issues for adva-newsletter ... </h4>
-
-    <ul>
-
-    <li>
-
-    Adva-newsletterter has now option to add a plain text version of your issue.
-
-    </li>
-
-    </ul>
-
-    <h4>... rewritten contact mailer ... </h4>
-
-    <ul>
-
-    <li>We rewrote contact mailer from scratch. It got some additions in the process -- you can now specify id's and classes to form fields so you can more easily style them. Also contact mailer now understands headers too.
-
-    </li>
-
-    </ul>
-
-    <h4>... projection stylesheet for projectors ... </h4>
-
-    <ul>
-
-    <li>
-
-    Our admin interface is now more enjoyable to view when  using a projector.
-
-    </li>
-
-    </ul>
-
-    <h4>.. :max_display_level menu option ... </h4>
-
-    <ul>
-
-    <li>
-
-    We added a menu option for sections menu to only show menus below certain level. With level we mean here how deep the section is nested. You can add :max_display_level => 1 option to the menu render to only display sections with level 0 and 1.
-
-    </li>
-
-    </ul>
-
-    <h4>... and some bug fixes</h4>
-
-    <ul>
-
-    <li>Fixed failing JS test for adva_assets</li>
-
-    <li>Fixed internal server error for asset widget search.</li>
-
-    <li>Fixed adva_google_analytics migration</li>
-
-    <li>Fixed contact mailer form</li>
-
-    <li>Fixed bug with contact mailer and empty select field</li>
-
-    <li>Fixed migrate titles rake task</li>
-
-    <li>Fixed categories routing filter</li>
-
-    <li>Fixed bug with invalid email on adva-cms installation</li>
-
-    <li>Fixed bug with viewing nested categories on frontend</li>
-
-    <li>Fixed bug with article filtering with unpublished flag</li>
-
-    <li>Fixed globalize bug with nested set</li>
-
-    <li>Increased the size of file body on theme file edit</li>
-
-    <li>Sections now work with umlauts</li>
-
-    <li>Fixed css for hint form fields on forms</li>
-
-    <li>Fixed problem with theme assets cache on production environment</li>
-
-    <li>Re-ordering of sections, categories and sets is more visible</li>
-
-    </ul>
-
-    <h3>Plans for the future</h3>
-
-    <ul>
-
-    <li>
-
-    Revisiting RBAC. This one is currently on development and it will be released on one of the following releases!
-
-    </li>
-
-    <li>
-
-    Safemode. Making adva-cms more secure.
-
-    </li>
-
-    <li>
-
-    Revisiting i18n keys
-
-    </li>    Revisiting the frontend default layout    <li>
-
-    Namespacing adva-cms to prevent name clashes with your app
-
-    </li>
-
-    <li>
-
-    And much more!
-
-    </li>
-
-    </ul>
-
-    <h3>Support and contribution</h3>
-
-    <p>    We are still moreore than happy to receive any new translations of adva-cms from you guys! You can also contribute to our
-
-    <a href="http://groups.google.com/group/adva-cms/web/guide?hl=en">guide</a>
-
-    .    </p>
-
-    <p>    For any questionss regarding adva-cms please drop by in #adva-cms @ irc.freenode.net or send an email to
-
-    <a href="http://groups.google.com/group/adva-cms">our mailing-list</a>. We are happy to help you!    </p>
-
-    <h3> Developer team </h3>
-
-    <p>
-
-    <img src="http://www.gravatar.com/avatar.php?size=90&gravatar_id=402602a60e500e85f2f5dc1ff3648ecb&default=http://adva-cms.org/images/avatar.gif">
-
-    <img src="http://www.gravatar.com/avatar.php?size=90&gravatar_id=aada12ccf9346ad54af33e989c5c3e9e&default=http://adva-cms.org/images/avatar.gif">
-
-    <img src="http://www.gravatar.com/avatar.php?size=90&gravatar_id=5976001c9ebf095c4988855a4e102de5&default=http://adva-cms.org/images/avatar.gif">
-
-    <img src="http://www.gravatar.com/avatar.php?size=90&gravatar_id=d444791fa932ffdb231ff35458e1d1fa&default=http://adva-cms.org/images/avatar.gif">
-
-    <img src="http://www.gravatar.com/avatar/550044905de4472c43617d39cb25cae8?s=90&d=http%3A%2F%2Fgithub.com%2Fimages%2Fgravatars%2Fgravatar-50.png">
-
-    <img src="http://www.gravatar.com/avatar/5e4f27d7dedbc9d7e1b5040d20cbd67c?s=90&d=http%3A%2F%2Fgithub.com%2Fimages%2Fgravatars%2Fgravatar-50.png">
-
-    <img src="http://www.gravatar.com/avatar/114ff87909d3f24150ff3d70d5254338?s=90&d=http%3A%2F%2Fgithub.com%2Fimages%2Fgravatars%2Fgravatar-50.png">
-
-    <img src="http://adva-cms.org/sites/site-1/assets/mark.jpg" width="73px">
-
+    on July 31, 2009 12:16
     </p>
-
-    <p>
-
-    <a href="http://www.workingwithrails.com/person/9963-sven-fuchs">Sven Fuchs</a>
-
-    ,    <a href="http://www.workingwithrails.com/person/10731-marko-sepp">Marko Seppä</a>
-
-    ,    <a href="http://www.workingwithrails.com/person/8252-clemens-kofler">Clemens Kofler</a>
-
-    ,    <a href="http://www.workingwithrails.com/person/759-joshua-harvey">Joshua Harvey</a>
-
-    ,    <a href="http://priit.mx.ee">Priit Tamboom</a>
-
-    ,    <a href="http://ananasblau.com/">Thomas R Koll</a>
-
-    ,    <a href="http://www.lucaguidi.com/">Luca Guidi</a>
-
-    ,    <a href="https://www.xing.com/profile/mark_schlusnus">Mark Schlusnus</a>
-
-    </p>
-
-    </ul>
-
     </div>
-
+    This month we are happy to announce a bug fix release for the adva-cms; that's why we call this release "the bug hunter release". It has bunch of bug fixes and it also adds some minor features and changes like 'email notification switch' (which allows you to disable and enable email notifications per site), translatable section and category titles, and much more. We also improved adva-themes and the result is more robust and user friendly theming experience for you.
+    <p></p>
+    <h3>So whats changed?</h3>
+    <ul>
+    <h4>Translatable section and category titles ... </h4>
+    <ul>
+    <li>We now support the translation of section and category titles. If you are upgrading from old adva-cms version you most probably need to run a rake task 'rake adva:i18n:migrate_titles LOCALE=your_locale' to translate your current titles.
+    </li>
+    </ul>
+    <h4>... improved adva-themes ... </h4>
+    <ul>
+    <li>
+    adva-themes got some improvements.
+    <ul>
+    <li> Theme importing won't fail anymore if you have your theme zipped with extra folder structure. This fixes the annoyance from Safari where downloading unzips the theme to a folder with the theme name and creates more deeply nested directory structure. Now you can safely zip this new folder and theme importing strips off the unnecessary directory structure. </li>
+    <li>Theme file names are now unique.</li>
+    <li>You can now upload multiple theme files at the same time.</li>
+    </ul>
+    </li>
+    </ul>
+    <h4>... unified file upload locations ... </h4>
+    <ul>
+    <li>
+    Previously, when you installed adva-cms on single site mode and uploaded some files to your site and later wanted to move to multi-site installation, you could not find your old files anymore. This sucks, so we unified the file upload paths between single and multi-site mode. And don't worry, we also have a migration that copies your old files to the new file structure if you are migrating from an old adva-cms release!
+    </li>
+    </ul>
+    <h4>... email notifications ... </h4>
+    <ul>
+    <li>Since we started to receive a couple of hundreds of 'an article has been updated' messages per day - we decide to add a feature to disable these notifications for each site. This is kind of quick solution since we want to add a feature later on that allows you to subscribe to notifications.
+    </li>
+    </ul>
+    <h4>... bunch of help hints ... </h4>
+    <ul>
+    <li>We added bunch of help hints to different form fields to help you with the confusing things on adva-cms. Also these hints should reveal some features that has been long existant but maybe a little bit hidden. Have fun finding them!
+    </li>
+    </ul>
+    <h4>... plain text issues for adva-newsletter ... </h4>
+    <ul>
+    <li>
+    Adva-newsletter has now option to add a plain text version of your issue.
+    </li>
+    </ul>
+    <h4>... rewritten contact mailer ... </h4>
+    <ul>
+    <li>We rewrote contact mailer from scratch. It got some additions in the process -- you can now specify id's and classes to form fields so you can more easily style them. Also contact mailer now understands headers too.
+    </li>
+    </ul>
+    <h4>... projection stylesheet for projectors ... </h4>
+    <ul>
+    <li>
+    Our admin interface is now more enjoyable to view when using a projector.
+    </li>
+    </ul>
+    <h4>.. :max_display_level menu option ... </h4>
+    <ul>
+    <li>
+    We added a menu option for sections menu to only show menus below certain level. With level we mean here how deep the section is nested. You can add :max_display_level => 1 option to the menu render to only display sections with level 0 and 1.
+    </li>
+    </ul>
+    <h4>... and some bug fixes</h4>
+    <ul>
+    <li>Fixed failing JS test for adva_assets</li>
+    <li>Fixed internal server error for asset widget search.</li>
+    <li>Fixed adva_google_analytics migration</li>
+    <li>Fixed contact mailer form</li>
+    <li>Fixed bug with contact mailer and empty select field</li>
+    <li>Fixed migrate titles rake task</li>
+    <li>Fixed categories routing filter</li>
+    <li>Fixed bug with invalid email on adva-cms installation</li>
+    <li>Fixed bug with viewing nested categories on frontend</li>
+    <li>Fixed bug with article filtering with unpublished flag</li>
+    <li>Fixed globalize bug with nested set</li>
+    <li>Increased the size of file body on theme file edit</li>
+    <li>Sections now work with umlauts</li>
+    <li>Fixed css for hint form fields on forms</li>
+    <li>Fixed problem with theme assets cache on production environment</li>
+    <li>Re-ordering of sections, categories and sets is more visible</li>
+    </ul>
+    <h3>Plans for the future</h3>
+    <ul>
+    <li>
+    Revisiting RBAC. This one is currently on development and it will be released on one of the following releases!
+    </li>
+    <li>
+    Safemode. Making adva-cms more secure.
+    </li>
+    <li>
+    Revisiting i18n keys
+    </li>
+    Revisiting the frontend default layout
+    <li>
+    Namespacing adva-cms to prevent name clashes with your app
+    </li>
+    <li>
+    And much more!
+    </li>
+    </ul>
+    <h3>Support and contribution</h3>
+    <p>
+    We are still more than happy to receive any new translations of adva-cms from you guys! You can also contribute to our 
+    <a href="http://groups.google.com/group/adva-cms/web/guide?hl=en">guide</a>
+    .
+    </p>
+    <p>
+    For any questions regarding adva-cms please drop by in #adva-cms @ irc.freenode.net or send an email to 
+    <a href="http://groups.google.com/group/adva-cms">our mailing-list</a>
+    . We are happy to help you!
+    </p>
+    <h3> Developer team </h3>
+    <p>
+    <img src="http://www.gravatar.com/avatar.php?size=90&gravatar_id=402602a60e500e85f2f5dc1ff3648ecb&default=http://adva-cms.org/images/avatar.gif">
+    <img src="http://www.gravatar.com/avatar.php?size=90&gravatar_id=aada12ccf9346ad54af33e989c5c3e9e&default=http://adva-cms.org/images/avatar.gif">
+    <img src="http://www.gravatar.com/avatar.php?size=90&gravatar_id=5976001c9ebf095c4988855a4e102de5&default=http://adva-cms.org/images/avatar.gif">
+    <img src="http://www.gravatar.com/avatar.php?size=90&gravatar_id=d444791fa932ffdb231ff35458e1d1fa&default=http://adva-cms.org/images/avatar.gif">
+    <img src="http://www.gravatar.com/avatar/550044905de4472c43617d39cb25cae8?s=90&d=http%3A%2F%2Fgithub.com%2Fimages%2Fgravatars%2Fgravatar-50.png">
+    <img src="http://www.gravatar.com/avatar/5e4f27d7dedbc9d7e1b5040d20cbd67c?s=90&d=http%3A%2F%2Fgithub.com%2Fimages%2Fgravatars%2Fgravatar-50.png">
+    <img src="http://www.gravatar.com/avatar/114ff87909d3f24150ff3d70d5254338?s=90&d=http%3A%2F%2Fgithub.com%2Fimages%2Fgravatars%2Fgravatar-50.png">
+    <img src="http://adva-cms.org/sites/site-1/assets/mark.jpg" width="73px">
+    </p>
+    <p>
+    <a href="http://www.workingwithrails.com/person/9963-sven-fuchs">Sven Fuchs</a>
+    ,
+    <a href="http://www.workingwithrails.com/person/10731-marko-sepp">Marko Seppä</a>
+    ,
+    <a href="http://www.workingwithrails.com/person/8252-clemens-kofler">Clemens Kofler</a>
+    ,
+    <a href="http://www.workingwithrails.com/person/759-joshua-harvey">Joshua Harvey</a>
+    ,
+    <a href="http://priit.mx.ee">Priit Tamboom</a>
+    ,
+    <a href="http://ananasblau.com/">Thomas R Koll</a>
+    ,
+    <a href="http://www.lucaguidi.com/">Luca Guidi</a>
+    ,
+    <a href="https://www.xing.com/profile/mark_schlusnus">Mark Schlusnus</a>
+    </p>
+    </ul>
+    </div>
     </div>

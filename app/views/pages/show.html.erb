@@ -6,7 +6,9 @@
 
 <% content_for :sidebar do %>
   <h4>Related Pages</h4>
-  <% @page.parent.children.each do |p| %>
-    <%= link_to p.title, "/#{p.path}" %><br>
-  <%end %>
+  <% if @page.parent %>
+    <% @page.parent.children.each do |p| %>
+      <%= link_to p.name, "/#{p.path}" %><br>
+    <% end %>
+  <% end %>
 <% end %>

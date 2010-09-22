@@ -2,216 +2,129 @@
   title: 'adva-cms 0.2.4: Tiny but oh-so awesome!'
   body: |
     <div id="article_45" class="entry clearing">
-  
     <div class="content">
-  
     <h2>
-  
     <a href="/2009/9/29/adva-cms-0-2-4-tiny-but-oh-so-awesome" class="show article" id="show_article_45" title="Show">adva-cms 0.2.4: Tiny but oh, so awesome!</a>
-  
     </h2>
-  
     <div class="meta">
-  
     <p>
-  
     posted by Marko Seppä
-  
-    on September 29, 2009 10:48  </p>
-  
-    </div>  This month we have a tiny bug functionalityix release with a couple of nice features. We fixed some bugs related to postgresql and we added optimistic locking to the articles and wikipages on the backend. Also this release introduces relative symlinks for assets! So when you deploy to your production server you do not need to worry about having your local paths on asset symlinks, awesome. Oh, and we also have an alternate admin layout that should fix the nasty IE 7 bugs!  <p></p>
-  
+    on September 29, 2009 10:48
+    </p>
+    </div>
+    This month we have a tiny bug fix release with a couple of nice features. We fixed some bugs related to postgresql and we added optimistic locking to the articles and wikipages on the backend. Also this release introduces relative symlinks for assets! So when you deploy to your production server you do not need to worry about having your local paths on asset symlinks, awesome. Oh, and we also have an alternate admin layout that should fix the nasty IE 7 bugs!
+    <p></p>
     <h3>What changed?</h3>
-  
     <ul>
-  
     <h4>Optimistic locking ...</h4>
-  
     <ul>
-  
     <li>
-  
     Have you edited an article and asked other user to proof read it? After corrections you add something little and save, just to realize that you overwrote the changes your proof reader did. Well, no more! We now have optimistic locking for articles and for wikipages. If somebody changes the content, then you have to have the most updated version of the content to be able to update it, awesome.
-  
     </li>
-  
     </ul>
-  
     <h4>... categories hidden in single article mode ...</h4>
-  
     <ul>
-  
     <li>
-  
     Have you ever had an urge to create couple of dozen of categories for your single article? We haven't. And we thought it would be pretty awesome if you would not do it either. So whenever you are on single article mode, you cannot create categories on that section.
-  
     </li>
-  
     </ul>
-  
     <h4>... sections are published by default ...</h4>
-  
     <ul>
-  
     <li>
-  
-    Did you ever strain your mouse fixesnger when you wanted to create a new section and have it published? We did. So, whenever you create a new section, it is published by default! Awesome.
-  
+    Did you ever strain your mouse finger when you wanted to create a new section and have it published? We did. So, whenever you create a new section, it is published by default! Awesome.
     </li>
-  
     </ul>
-  
     <h4>... an alternate admin layout for IE 7 ...</h4>
-  
     <ul>
-  
-    <li>  It is know issue that adva-cms does not work very well with IE browsers. We have now an alternative layout that should fix layout problems when you are using IE 7. If you want to try it out you can just copy admin_alternate.html.erb from engines/adva_cms/app/views/layouts/admin_alternate.html.erb to your app/views/layouts directory and rename it as admin.html.erb. If you decide to do so, we would be happy to hear any feedback about it! You can write your feedback to our
-  
+    <li>
+    It is know issue that adva-cms does not work very well with IE browsers. We have now an alternative layout that should fix layout problems when you are using IE 7. If you want to try it out you can just copy admin_alternate.html.erb from engines/adva_cms/app/views/layouts/admin_alternate.html.erb to your app/views/layouts directory and rename it as admin.html.erb. If you decide to do so, we would be happy to hear any feedback about it! You can write your feedback to our 
     <a href="http://groups.google.com/group/adva-cms/browse_thread/thread/61c6b0c051fc64b7">mailing-list</a>
-  
-    or you can contact us at irc too! Oh, and if you were wondering something twisted, here is the answer: No, we do not support any earlier versions of IE. IE fix was contributed by
-  
+    or you can contact us at irc too! Oh, and if you were wondering something twisted, here is the answer: No, we do not support any earlier versions of IE. IE fix was contributed by 
     <a href="http://github.com/galenking/">Galen King</a>
-  
-    , thanks!  </li>
-  
-    </ul>
-  
-    <h4>... relative symlinks for assets ...</h4>
-  
-    <ul>
-  
-    <li>
-  
-    Ever frustrated about your lookscal paths showing on the symlinked adva engines at your production machine? Now assets have relative symlinks and you can deploy to your production server without worries that the symlink paths would be incorrect! That's also awesome.
-  
-    </li>
-  
-    </ul>
-  
-    <h4>... and some bug fixes</h4>
-  
-    <ul>
-  
-    <li>
-  
-    Fixed sql count query on tags and taggins with postgresql. Contributed by
-  
-    <a href="http://github.com/jridgway">Joseph Ridgway</a>
-  
     , thanks!
-  
     </li>
-  
-    <li>Fixed translation scopes for extensible form builder</li>
-  
-    <li>Fixed db migration file to play nice with postgresql</li>
-  
-    <li>Fixed optimistic locking with postgresql</li>
-  
     </ul>
-  
-    </ul>
-  
-    <h3>Plans for the future</h3>
-  
+    <h4>... relative symlinks for assets ...</h4>
     <ul>
-  
     <li>
-  
-    Revisiting RBAC. This one is currently on development and it will be released on one of the following releases!
-  
+    Ever frustrated about your local paths showing on the symlinked adva engines at your production machine? Now assets have relative symlinks and you can deploy to your production server without worries that the symlink paths would be incorrect! That's also awesome.
     </li>
-  
-    <li>
-  
-    Revisiting i18n keys
-  
-    </listi>  Revisiting the frontend default layout  <li>
-  
-    Namespacing adva-cms to prevent name clashes with your app
-  
-    </li>
-  
-    <li>
-  
-    And much more!
-  
-    </li>
-  
     </ul>
-  
+    <h4>... and some bug fixes</h4>
+    <ul>
+    <li>
+    Fixed sql count query on tags and taggins with postgresql. Contributed by 
+    <a href="http://github.com/jridgway">Joseph Ridgway</a>
+    , thanks!
+    </li>
+    <li>Fixed translation scopes for extensible form builder</li>
+    <li>Fixed db migration file to play nice with postgresql</li>
+    <li>Fixed optimistic locking with postgresql</li>
+    </ul>
+    </ul>
+    <h3>Plans for the future</h3>
+    <ul>
+    <li>
+    Revisiting RBAC. This one is currently on development and it will be released on one of the following releases!
+    </li>
+    <li>
+    Revisiting i18n keys
+    </li>
+    Revisiting the frontend default layout
+    <li>
+    Namespacing adva-cms to prevent name clashes with your app
+    </li>
+    <li>
+    And much more!
+    </li>
+    </ul>
     <h3>Support and contribution</h3>
-  
-    <p>  We are still more than happy to releaseseceive any new translations of adva-cms from you guys! Also you can contribute to our
-  
+    <p>
+    We are still more than happy to receive any new translations of adva-cms from you guys! Also you can contribute to our 
     <a href="http://groups.google.com/group/adva-cms/web/guide?hl=en">guide</a>
-  
-    !  </p>
-  
-    <p>  For any questions regarding adva-cms please drop by in #adva-cms @ 	irc.freenode.net or send an email to
-  
-    <a href="http://groups.google.com/group/adva-cms">our mailing-list</a>. We are happy to help you!  </p>
-  
+    !
+    </p>
+    <p>
+    For any questions regarding adva-cms please drop by in #adva-cms @ irc.freenode.net or send an email to 
+    <a href="http://groups.google.com/group/adva-cms">our mailing-list</a>
+    . We are happy to help you!
+    </p>
     <h3> Developer team </h3>
-  
     <p>
-  
     <img src="http://www.gravatar.com/avatar.php?size=90&gravatar_id=402602a60e500e85f2f5dc1ff3648ecb&default=http://adva-cms.org/images/avatar.gif">
-  
     <img src="http://www.gravatar.com/avatar.php?size=90&gravatar_id=aada12ccf9346ad54af33e989c5c3e9e&default=http://adva-cms.org/images/avatar.gif">
-  
     <img src="http://www.gravatar.com/avatar.php?size=90&gravatar_id=5976001c9ebf095c4988855a4e102de5&default=http://adva-cms.org/images/avatar.gif">
-  
     <img src="http://www.gravatar.com/avatar.php?size=90&gravatar_id=b474b21a15938494d690805e9b319a12&default=http://adva-cms.org/images/avatar.gif">
-  
     <img src="http://www.gravatar.com/avatar.php?size=90&gravatar_id=25393e08b802f62823636914f9297d20&default=http://adva-cms.org/images/avatar.gif">
-  
     </p>
-  
     <p>
-  
     <a href="http://www.workingwithrails.com/person/9963-sven-fuchs">Sven Fuchs</a>
-  
-    ,  <a href="http://www.workingwithrails.com/person/10731-marko-sepp">Marko Seppä</a>
-  
-    ,  <a href="http://www.workingwithrails.com/person/8252-clemens-kofler">Clemens Kofler</a>
-  
-    ,  <a href="http://workingwithrails.com/person/17707-matthias-viehweger">Matthias Viehweger</a>
-  
-    ,  <a href="http://github.com/floess">Christopher Floess</a>
-  
+    ,
+    <a href="http://www.workingwithrails.com/person/10731-marko-sepp">Marko Seppä</a>
+    ,
+    <a href="http://www.workingwithrails.com/person/8252-clemens-kofler">Clemens Kofler</a>
+    ,
+    <a href="http://workingwithrails.com/person/17707-matthias-viehweger">Matthias Viehweger</a>
+    ,
+    <a href="http://github.com/floess">Christopher Floess</a>
     </p>
-  
     <p>
-  
     <img src="http://www.gravatar.com/avatar.php?size=90&gravatar_id=d444791fa932ffdb231ff35458e1d1fa&default=http://adva-cms.org/images/avatar.gif">
-  
     <img src="http://www.gravatar.com/avatar/550044905de4472c43617d39cb25cae8?s=90&d=http%3A%2F%2Fgithub.com%2Fimages%2Fgravatars%2Fgravatar-50.png">
-  
     <img src="http://www.gravatar.com/avatar/5e4f27d7dedbc9d7e1b5040d20cbd67c?s=90&d=http%3A%2F%2Fgithub.com%2Fimages%2Fgravatars%2Fgravatar-50.png">
-  
     <img src="http://www.gravatar.com/avatar/114ff87909d3f24150ff3d70d5254338?s=90&d=http%3A%2F%2Fgithub.com%2Fimages%2Fgravatars%2Fgravatar-50.png">
-  
     <img src="http://adva-cms.org/sites/site-1/assets/mark.jpg" width="73px">
-  
     </p>
-  
     <p>
-  
     <a href="http://www.workingwithrails.com/person/759-joshua-harvey">Joshua Harvey</a>
-  
-    ,  <a href="http://priit.mx.ee">Priit Tamboom</a>
-  
-    ,  <a href="http://ananasblau.com/">Thomas R Koll</a>
-  
-    ,  <a href="http://www.lucaguidi.com/">Luca Guidi</a>
-  
-    ,  <a href="https://www.xing.com/profile/mark_schlusnus">Mark Schlusnus</a>
-  
+    ,
+    <a href="http://priit.mx.ee">Priit Tamboom</a>
+    ,
+    <a href="http://ananasblau.com/">Thomas R Koll</a>
+    ,
+    <a href="http://www.lucaguidi.com/">Luca Guidi</a>
+    ,
+    <a href="https://www.xing.com/profile/mark_schlusnus">Mark Schlusnus</a>
     </p>
-  
     </div>
-  
     </div>
-  

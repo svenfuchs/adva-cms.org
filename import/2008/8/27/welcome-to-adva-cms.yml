@@ -1,8 +1,6 @@
 ---
   title: Welcome to adva cms!
   body: |
-    <div id="content">
-
     <div id="article_13" class="entry clearing">
 
     <div class="content">
@@ -99,7 +97,7 @@
 
     We've put together a brief overview about the most important engines that are already in adva cms here:
 
-    <a href="/wiki/wikipages/adva-cms-engine-overview">adva cms engines overview</a>
+    <a href="/wiki/wikipages/adva-cms-engines-overview">adva cms engines overview</a>
 
     .
 
@@ -130,8 +128,6 @@
     </li>
 
     </ul>
-
-    </div>
 
     </div>
 

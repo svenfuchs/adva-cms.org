@@ -2,271 +2,155 @@
   title: 'adva-cms 0.2.1: The summer release!'
   body: |
     <div id="article_18" class="entry clearing">
-
     <div class="content">
-
     <h2>
-
     <a href="/2009/6/22/adva-cms-0-2-1-the-summer-release" class="show article" id="show_article_18" title="Show">adva-cms 0.2.1: The summer release!</a>
-
     </h2>
-
     <div class="meta">
-
     <p>
-
-    possibleted by Marko Seppä
-
-    on June 22, 2009 10:19  </p>
-
-    </div>  We are hadppy to announce adva-cms 0.2.1 after a little longer break since our last release. This release introduces things like custom tab indexes for the form builder, two new cells, bunch of bug fixes and other additions. We also did some battle testing on the spam filters and made them more reliable to make sure they work as expected.  <p></p>
-
-    <h3>Whats new?</h3>
-
-    <ul>
-
-    <h4>Two neww cells ... </h4>
-
-    <ul>
-
-    <li>
-
-    A content cell can be used to display recent content of the site. The amount of contents shown can be altered by "count" variable and the sort order by "order" variable.
-
-    </li>
-
-    <li>
-
-    A contact mailer cell adds contact forms to your content. Contact mailer currently supports text fields, text areas, radio buttons, check boxes and select fields. You can specify multiple recipients for the contact mails.
-
-    </li>
-
-    </ul>
-
-    <p>  Some instructions how to use these cells have been added to the adva-cms
-
-    <a href="http://wiki.github.com/svenfuchs/adva_cms">FAQ</a>
-
-    . There's an entry about cells on the section 6.11 on our
-
-    <a href="http://groups.google.com/group/adva-cms/web/guide?hl=en">guide</a>
-
-    - also, feel free to contribute to the guide!  </p>
-
-    <h4>... battle-tested spam filters ...</h4>
-
-    <p>
-
-    We did some real world testing for our spam filterters and used the data we received to do some of the integration tests. The result is more reliable spam filters and the confirmation that they work as they are supposed to work. Spam filters got following improvements:
-
+    posted by Marko Seppä
+    on June 22, 2009 10:19
     </p>
-
-    <ul>
-
-    <li>
-
-    Akismet spam filter was broken and is now fixed.
-
-    </li>
-
-    <li>
-
-    Integration tests guarantee that comments that are posted using the hidden comment form are rejected.
-
-    </li>
-
-    <li>
-
-    More integration tests for the spam filterterslters with real world data have confirmed that everything works.
-
-    </thatli>
-
-    </ul>
-
-    <h4>... the form builder got tab indexes ...</h4>
-
-    <ul>
-
-    <li>
-
-    Form builder now builds tab indexing automatically.
-
-    </li>
-
-    <li>
-
-    User now has multiple options to choose where he wants the given tab to be placed.
-
-    </li>
-
-    </ul>
-
-    <h4>... some other additions ...</h4>
-
-    <ul>
-
-    <li>
-
-    adva_meta_tags plugin adds meta tags to the entire site. This adds the site's metatags to articles by default when an article does not have any.
-
-    </li>
-
-    <li>
-
-    Sections now have a publishing date and they are shown on frontend only if they have been published. The only exception to this is the root section (your home section). Sections are marked as published if the content of section is published, and other way around, content becomes unpublished if section is marked unpublished. This also works on nested sections.
-
-    </li>
-
-    <li>
-
-    adva-newsletters have been under a small experiment with adva:: namespacing. We are planning to do some more complete namespacing of adva-cms in the future.
-
-    </li>
-
-    <li>
-
-    A bunch of German translations have been added to adva-cms.
-
-    </li>
-
-    <li>Favicons can be added to the theme.</li>
-
-    </ul>
-
-    <h4>... some contributions ...</h4>
-
-    <ul>
-
-    <li>
-
-    Added application.js to common javascript extension. This makes sure that your applications application.js is loaded with adva-cms. Contributed by
-
-    <a href="http://github.com/nachokb">Ignacio Carrera</a>
-
-    </li>
-
-    <li>
-
-    adva_cells plugin is now part of adva:core installation since cells are quite often used feature. Contributed by
-
-    <a href="http://blog.theurbanrebellion.com/">Michael Christenson II</a>
-
-    </li>
-
-    <li>  French rails locale by Jorge Dias. </li>
-
-    <li>
-
-    Some translation corrections to adva_photos by
-
-    <a href="http://github.com/mitchlloyd">mitchlloyd</a>
-
-    </li>
-
-    </ul>
-
-    <p>  Thanks to all of the contributors! </p>
-
-    <h4>... and some bug fixes</h4>
-
-    <ul>
-
-    <li>Users choice for section type and title are not ignored by installation anymore</li>
-
-    <li>Reorder link now appears only on index pages</li>
-
-    <li>Users created on the backend become members of the site</li>
-
-    <li>Overview page won't crash when the target of activity is deleted</li>
-
-    <li>Asset widget attach and detach features have been fixed</li>
-
-    <li>A few javascript errors from admin interface have been fixed</li>
-
-    </ul>
-
-    <h3>Plans for the future</h3>
-
-    <ul>
-
-    <li>
-
-    Further developing RBAC
-
-    </li>
-
-    <li>
-
-    Revisiting i18n keys
-
-    </li>  Revisiting theurbanrebellion frontend default layout  <li>  Namespacing adva-cms to prevent name clashes with your app </li>
-
-    <li>
-
-    And much more!
-
-    </li>
-
-    </ul>
-
-    <h3>Support and contribution</h3>
-
-    <p>
-
-    We are still more than happy to receive any new translations of adva-cms from you guys! Also you can contribute to our
-
-    <a href="http://groups.google.com/group/adva-cms/web/guide?hl=en">guide</a>
-
-    !  </p>
-
-    <p>  For anyy questions regarding adva-cms please drop by in #adva-cms @ irc.freenode.net or send an email to
-
-    <a href="http://groups.google.com/group/adva-cms">our mailing-list</a>. We are happy to help you!  </p>
-
-    <h3> Developer team </h3>
-
-    <p>
-
-    <img src="http://www.gravatar.com/avatar.php?size=90&gravatar_id=402602a60e500e85f2f5dc1ff3648ecb&default=http://adva-cms.org/images/avatar.gif">
-
-    <img src="http://www.gravatar.com/avatar.php?size=90&gravatar_id=aada12ccf9346ad54af33e989c5c3e9e&default=http://adva-cms.org/images/avatar.gif">
-
-    <img src="http://www.gravatar.com/avatar.php?size=90&gravatar_id=5976001c9ebf095c4988855a4e102de5&default=http://adva-cms.org/images/avatar.gif">
-
-    <img src="http://www.gravatar.com/avatar.php?size=90&gravatar_id=d444791fa932ffdb231ff35458e1d1fa&default=http://adva-cms.org/images/avatar.gif">
-
-    <img src="http://www.gravatar.com/avatar/550044905de4472c43617d39cb25cae8?s=90&d=http%3A%2F%2Fgithub.com%2Fimages%2Fgravatars%2Fgravatar-50.png">
-
-    <img src="http://www.gravatar.com/avatar/5e4f27d7dedbc9d7e1b5040d20cbd67c?s=90&d=http%3A%2F%2Fgithub.com%2Fimages%2Fgravatars%2Fgravatar-50.png">
-
-    <img src="http://www.gravatar.com/avatar/114ff87909d3f24150ff3d70d5254338?s=90&d=http%3A%2F%2Fgithub.com%2Fimages%2Fgravatars%2Fgravatar-50.png">
-
-    <img src="http://adva-cms.org/sites/site-1/assets/mark.jpg" width="73px">
-
-    </p>
-
-    <p>
-
-    <a href="http://www.workingwithrails.com/person/9963-sven-fuchs">Sven Fuchs</a>
-
-    ,  <a href="http://www.workingwithrails.com/person/10731-marko-sepp">Marko Seppä</a>
-
-    ,  <a href="http://www.workingwithrails.com/person/8252-clemens-kofler">Clemens Kofler</a>
-
-    ,  <a href="http://www.workingwithrails.com/person/759-joshua-harvey">Joshua Harvey</a>
-
-    ,  <a href="http://priit.mx.ee">Priit Tamboom</a>
-
-    ,  <a href="http://ananasblau.com/">Thomas R Koll</a>
-
-    ,  <a href="http://www.lucaguidi.com/">Luca Guidi</a>
-
-    ,  <a href="https://www.xing.com/profile/mark_schlusnus">Mark Schlusnus</a>
-
-    </p>
-
-    </ul>
-
     </div>
-
+    We are happy to announce adva-cms 0.2.1 after a little longer break since our last release. This release introduces things like custom tab indexes for the form builder, two new cells, bunch of bug fixes and other additions. We also did some battle testing on the spam filters and made them more reliable to make sure they work as expected.
+    <p></p>
+    <h3>Whats new?</h3>
+    <ul>
+    <h4>Two new cells ... </h4>
+    <ul>
+    <li>
+    A content cell can be used to display recent content of the site. The amount of contents shown can be altered by "count" variable and the sort order by "order" variable.
+    </li>
+    <li>
+    A contact mailer cell adds contact forms to your content. Contact mailer currently supports text fields, text areas, radio buttons, check boxes and select fields. You can specify multiple recipients for the contact mails.
+    </li>
+    </ul>
+    <p>
+    Some instructions how to use these cells have been added to the adva-cms 
+    <a href="http://wiki.github.com/svenfuchs/adva_cms">FAQ</a>
+    . There's an entry about cells on the section 6.11 on our 
+    <a href="http://groups.google.com/group/adva-cms/web/guide?hl=en">guide</a>
+    - also, feel free to contribute to the guide!
+    </p>
+    <h4>... battle-tested spam filters ...</h4>
+    <p>
+    We did some real world testing for our spam filters and used the data we received to do some of the integration tests. The result is more reliable spam filters and the confirmation that they work as they are supposed to work. Spam filters got following improvements:
+    </p>
+    <ul>
+    <li>
+    Akismet spam filter was broken and is now fixed.
+    </li>
+    <li>
+    Integration tests guarantee that comments that are posted using the hidden comment form are rejected.
+    </li>
+    <li>
+    More integration tests for the spam filters with real world data have confirmed that everything works.
+    </li>
+    </ul>
+    <h4>... the form builder got tab indexes ...</h4>
+    <ul>
+    <li>
+    Form builder now builds tab indexing automatically.
+    </li>
+    <li>
+    User now has multiple options to choose where he wants the given tab to be placed.
+    </li>
+    </ul>
+    <h4>... some other additions ...</h4>
+    <ul>
+    <li>
+    adva_meta_tags plugin adds meta tags to the entire site. This adds the site's metatags to articles by default when an article does not have any. 
+    </li>
+    <li>
+    Sections now have a publishing date and they are shown on frontend only if they have been published. The only exception to this is the root section (your home section). Sections are marked as published if the content of section is published, and other way around, content becomes unpublished if section is marked unpublished. This also works on nested sections.
+    </li>
+    <li>
+    adva-newsletters have been under a small experiment with adva:: namespacing. We are planning to do some more complete namespacing of adva-cms in the future.
+    </li>
+    <li>
+    A bunch of German translations have been added to adva-cms.
+    </li>
+    <li>Favicons can be added to the theme.</li>
+    </ul>
+    <h4>... some contributions ...</h4>
+    <ul>
+    <li>
+    Added application.js to common javascript extension. This makes sure that your applications application.js is loaded with adva-cms. Contributed by 
+    <a href="http://github.com/nachokb">Ignacio Carrera</a>
+    </li>
+    <li>
+    adva_cells plugin is now part of adva:core installation since cells are quite often used feature. Contributed by 
+    <a href="http://blog.theurbanrebellion.com/">Michael Christenson II</a>
+    </li>
+    <li>  French rails locale by Jorge Dias. </li>
+    <li>
+    Some translation corrections to adva_photos by 
+    <a href="http://github.com/mitchlloyd">mitchlloyd</a>
+    </li>
+    </ul>
+    <p>  Thanks to all of the contributors! </p>
+    <h4>... and some bug fixes</h4>
+    <ul>
+    <li>Users choice for section type and title are not ignored by installation anymore</li>
+    <li>Reorder link now appears only on index pages</li>
+    <li>Users created on the backend become members of the site</li>
+    <li>Overview page won't crash when the target of activity is deleted</li>
+    <li>Asset widget attach and detach features have been fixed</li>
+    <li>A few javascript errors from admin interface have been fixed</li>
+    </ul>
+    <h3>Plans for the future</h3>
+    <ul>
+    <li>
+    Further developing RBAC
+    </li>
+    <li>
+    Revisiting i18n keys
+    </li>
+    Revisiting the frontend default layout
+    <li>  Namespacing adva-cms to prevent name clashes with your app </li>
+    <li>
+    And much more!
+    </li>
+    </ul>
+    <h3>Support and contribution</h3>
+    <p>
+    We are still more than happy to receive any new translations of adva-cms from you guys! Also you can contribute to our 
+    <a href="http://groups.google.com/group/adva-cms/web/guide?hl=en">guide</a>
+    ! 
+    </p>
+    <p>
+    For any questions regarding adva-cms please drop by in #adva-cms @ irc.freenode.net or send an email to 
+    <a href="http://groups.google.com/group/adva-cms">our mailing-list</a>
+    . We are happy to help you!
+    </p>
+    <h3> Developer team </h3>
+    <p>
+    <img src="http://www.gravatar.com/avatar.php?size=90&gravatar_id=402602a60e500e85f2f5dc1ff3648ecb&default=http://adva-cms.org/images/avatar.gif">
+    <img src="http://www.gravatar.com/avatar.php?size=90&gravatar_id=aada12ccf9346ad54af33e989c5c3e9e&default=http://adva-cms.org/images/avatar.gif">
+    <img src="http://www.gravatar.com/avatar.php?size=90&gravatar_id=5976001c9ebf095c4988855a4e102de5&default=http://adva-cms.org/images/avatar.gif">
+    <img src="http://www.gravatar.com/avatar.php?size=90&gravatar_id=d444791fa932ffdb231ff35458e1d1fa&default=http://adva-cms.org/images/avatar.gif">
+    <img src="http://www.gravatar.com/avatar/550044905de4472c43617d39cb25cae8?s=90&d=http%3A%2F%2Fgithub.com%2Fimages%2Fgravatars%2Fgravatar-50.png">
+    <img src="http://www.gravatar.com/avatar/5e4f27d7dedbc9d7e1b5040d20cbd67c?s=90&d=http%3A%2F%2Fgithub.com%2Fimages%2Fgravatars%2Fgravatar-50.png">
+    <img src="http://www.gravatar.com/avatar/114ff87909d3f24150ff3d70d5254338?s=90&d=http%3A%2F%2Fgithub.com%2Fimages%2Fgravatars%2Fgravatar-50.png">
+    <img src="http://adva-cms.org/sites/site-1/assets/mark.jpg" width="73px">
+    </p>
+    <p>
+    <a href="http://www.workingwithrails.com/person/9963-sven-fuchs">Sven Fuchs</a>
+    ,
+    <a href="http://www.workingwithrails.com/person/10731-marko-sepp">Marko Seppä</a>
+    ,
+    <a href="http://www.workingwithrails.com/person/8252-clemens-kofler">Clemens Kofler</a>
+    ,
+    <a href="http://www.workingwithrails.com/person/759-joshua-harvey">Joshua Harvey</a>
+    ,
+    <a href="http://priit.mx.ee">Priit Tamboom</a>
+    ,
+    <a href="http://ananasblau.com/">Thomas R Koll</a>
+    ,
+    <a href="http://www.lucaguidi.com/">Luca Guidi</a>
+    ,
+    <a href="https://www.xing.com/profile/mark_schlusnus">Mark Schlusnus</a>
+    </p>
+    </ul>
+    </div>
     </div>

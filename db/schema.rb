@@ -10,7 +10,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20100816134006) do
+ActiveRecord::Schema.define(:version => 20100722131703) do
 
   create_table "accounts", :force => true do |t|
   end
@@ -31,35 +31,6 @@ ActiveRecord::Schema.define(:version => 20100816134006) do
     t.datetime "created_at"
     t.datetime "updated_at"
   end
-
-  create_table "cnet_product_translations", :force => true do |t|
-    t.integer  "cnet_product_id"
-    t.string   "locale"
-    t.text     "description"
-    t.text     "marketing_text"
-    t.datetime "created_at"
-    t.datetime "updated_at"
-  end
-
-  add_index "cnet_product_translations", ["cnet_product_id"], :name => "index_c7a0768817fff7f6d69bb973af1a431593639beb"
-  add_index "cnet_product_translations", ["locale", "cnet_product_id"], :name => "idx_cnet_product_translations_locale_cnet_product_id", :unique => true
-
-  create_table "cnet_products", :force => true do |t|
-    t.integer  "product_id"
-    t.integer  "category_id"
-    t.integer  "manufacturer_id"
-    t.string   "product_number",           :limit => 40
-    t.string   "manufacturer_part_number", :limit => 40
-    t.string   "status",                   :limit => 4
-    t.string   "cat_id",                   :limit => 2
-    t.string   "mkt_id",                   :limit => 10
-    t.string   "img_id",                   :limit => 10
-    t.string   "mf_id",                    :limit => 10
-    t.datetime "created_at"
-    t.datetime "updated_at"
-  end
-
-  add_index "cnet_products", ["product_number"], :name => "ix_cnet_products_product_number", :unique => true
 
   create_table "contact_addresses", :force => true do |t|
     t.integer  "addressable_id"
@@ -149,10 +120,10 @@ ActiveRecord::Schema.define(:version => 20100816134006) do
     t.integer  "lft"
     t.integer  "rgt"
     t.string   "type"
-    t.string   "title",      :default => "", :null => false
+    t.string   "name",       :default => "", :null => false
     t.string   "slug",       :default => "", :null => false
     t.string   "path",       :default => "", :null => false
-    t.string   "level"
+    t.integer  "level"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
@@ -162,7 +133,7 @@ ActiveRecord::Schema.define(:version => 20100816134006) do
     t.string   "name",       :default => "", :null => false
     t.string   "host",       :default => "", :null => false
     t.string   "title",      :default => "", :null => false
-    t.string   "subtitle"
+    t.string   "subtitle",   :default => ""
     t.string   "timezone"
     t.datetime "created_at"
     t.datetime "updated_at"
