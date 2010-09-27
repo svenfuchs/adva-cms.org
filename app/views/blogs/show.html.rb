@@ -3,7 +3,7 @@ class Blogs::Show < Minimal::Template
     unless resource.posts.empty?
       ul :class => 'posts' do
         resource.posts.order('created_at DESC').each do |post|
-          li :class => 'post hentry' do
+          li :class => 'post entry' do
             #h2 do
             #  link_to(post.title, [resource, post], :class => 'entry-title', :rel => 'bookmark')
             #end
