@@ -18,13 +18,21 @@ a {
   color: #aaa;
 }
 
+.posts {
+  margin-left: 0;
+  padding-left: 0;
+}
+.post {
+  list-style-type: none;
+}
+
 #content h2 {
   color: #666;
 }
 #content h2 a {
   color: #666;
 }
-#content ul, #content ol {
+.content ul, .content ol {
   margin: 0px 0px 0px 8px;
   padding: 0px 0px 0px 8px;
   list-style-type: circle;
@@ -96,3 +104,4 @@ textarea {
 textarea {
   font: 13px normal "Lucida Grande",Lucida,Helvetica,sans-serif;
 }
+

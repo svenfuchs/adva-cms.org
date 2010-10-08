@@ -124,6 +124,7 @@ ActiveRecord::Schema.define(:version => 20100722131703) do
     t.string   "slug",       :default => "", :null => false
     t.string   "path",       :default => "", :null => false
     t.integer  "level"
+    t.text     "options"
     t.datetime "created_at"
     t.datetime "updated_at"
   end

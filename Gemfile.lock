@@ -1,17 +1,17 @@
 PATH
-  remote: /home/chris/work/projects/adva-cms2/adva-blog
+  remote: /Volumes/Users/sven/Development/projects/adva-cms2/adva-blog
   specs:
     adva-blog (0.0.1)
       adva-core
       truncate_html
 
 PATH
-  remote: /home/chris/work/projects/adva-cms2/adva-core
+  remote: /Volumes/Users/sven/Development/projects/adva-cms2/adva-core
   specs:
     adva-core (0.0.1)
       gem_patching
       inherited_resources (= 1.1.2)
-      inherited_resources_helpers (= 0.0.9)
+      inherited_resources_helpers (= 0.0.10)
       minimal (= 0.0.20)
       nbrew-country_select
       rails (= 3.0.0)
@@ -23,7 +23,7 @@ PATH
       simple_table (= 0.0.5)
 
 PATH
-  remote: /home/chris/work/projects/adva-cms2/adva-static
+  remote: /Volumes/Users/sven/Development/projects/adva-cms2/adva-static
   specs:
     adva-static (0.0.1)
       adva-core
@@ -32,7 +32,7 @@ PATH
       watchr
 
 PATH
-  remote: /home/chris/work/projects/adva-cms2/adva-user
+  remote: /Volumes/Users/sven/Development/projects/adva-cms2/adva-user
   specs:
     adva-user (0.0.1)
       adva-core
@@ -72,36 +72,18 @@ GEM
       activesupport (~> 3.0.0)
     bcrypt-ruby (2.1.2)
     builder (2.1.2)
-    columnize (0.3.1)
-    cucumber (0.8.5)
-      builder (~> 2.1.2)
-      diff-lcs (~> 1.1.2)
-      gherkin (~> 2.1.4)
-      json_pure (~> 1.4.3)
-      term-ansicolor (~> 1.0.4)
-    cucumber-rails (0.3.2)
-      cucumber (>= 0.8.0)
-    database_cleaner (0.5.2)
     devise (1.1.2)
       bcrypt-ruby (~> 2.1.2)
       warden (~> 0.10.7)
-    diff-lcs (1.1.2)
     erubis (2.6.6)
       abstract (>= 1.0.0)
-    fakefs (0.2.1)
-    ffi (0.6.3)
-      rake (>= 0.8.7)
     gem_patching (0.0.2)
-    gherkin (2.1.5)
-      trollop (~> 1.16.2)
     has_scope (0.5.0)
     i18n (0.4.1)
     inherited_resources (1.1.2)
       has_scope (~> 0.5.0)
       responders (~> 0.6.0)
-    inherited_resources_helpers (0.0.9)
-    json_pure (1.4.6)
-    linecache (0.43)
+    inherited_resources_helpers (0.0.10)
     mail (2.2.5)
       activesupport (>= 2.3.6)
       mime-types
@@ -109,13 +91,11 @@ GEM
     mime-types (1.16)
     minimal (0.0.20)
       actionpack (>= 3.0.0.beta2)
-    mocha (0.9.8)
-      rake
     nbrew-country_select (0.0.1)
     nokogiri (1.4.3.1)
     polyglot (0.3.1)
     rack (1.2.1)
-    rack-cache (0.5.2)
+    rack-cache (0.5.3)
       rack (>= 0.4)
     rack-mount (0.6.13)
       rack (>= 1.0.0)
@@ -138,11 +118,6 @@ GEM
     responders (0.6.2)
     routing-filter (0.1.7)
       actionpack
-    ruby-debug (0.10.3)
-      columnize (>= 0.1)
-      ruby-debug-base (~> 0.10.3.0)
-    ruby-debug-base (0.10.3)
-      linecache (>= 0.3)
     silence_log_tailer (0.0.1)
     simple_form (1.2.2)
     simple_nested_set (0.0.13)
@@ -154,23 +129,14 @@ GEM
       actionpack (~> 3.0.0.rc)
       activesupport (~> 3.0.0.rc)
     sqlite3-ruby (1.2.5)
-    term-ansicolor (1.0.5)
-    test_declarative (0.0.3)
     thor (0.14.0)
-    tidy_ffi (0.1.3)
-      ffi (>= 0.3.5)
     treetop (1.4.8)
       polyglot (>= 0.3.1)
-    trollop (1.16.2)
     truncate_html (0.4.0)
     tzinfo (0.3.23)
     warden (0.10.7)
       rack (>= 1.0.0)
     watchr (0.7)
-    webrat (0.7.0)
-      nokogiri (>= 1.2.0)
-      rack (>= 1.0)
-      rack-test (>= 0.5.3)
 
 PLATFORMS
   ruby
@@ -180,15 +146,5 @@ DEPENDENCIES
   adva-core!
   adva-static!
   adva-user!
-  cucumber
-  cucumber-rails
-  database_cleaner
-  fakefs
-  mocha
   rails (= 3.0.0)
-  ruby-debug
   sqlite3-ruby (= 1.2.5)
-  test_declarative
-  thor
-  tidy_ffi
-  webrat (= 0.7.0)
