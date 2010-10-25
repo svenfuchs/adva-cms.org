@@ -1,0 +1,54 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html><head><meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+<meta generator="adva-cms2" />
+<title>adva-cms</title>
+<link href="/stylesheets/adva-core/common/reset.css" media="screen" rel="stylesheet" type="text/css" />
+<link href="/stylesheets/adva-core/common/layout.css" media="screen" rel="stylesheet" type="text/css" />
+<link href="/stylesheets/adva-core/common/styles.css" media="screen" rel="stylesheet" type="text/css" />
+<link href="/stylesheets/adva-core/common/forms.css" media="screen" rel="stylesheet" type="text/css" />
+<link href="/stylesheets/adva-core/default/layout.css" media="screen" rel="stylesheet" type="text/css" />
+<link href="/stylesheets/adva-core/default/styles.css" media="screen" rel="stylesheet" type="text/css" />
+
+
+</head>
+<body><div id="page"><div id="header"><h1>adva-cms</h1>
+<ul id="menu"><li class="active"><a href="/">Home</a>
+</li>
+<li><a href="/wiki">Wiki</a>
+</li>
+</ul>
+
+</div>
+<div id="main"><div class="post"><h2><a href="/2010/10/25/adva-cms2-0-0-1-developer-sneak-peak-preview-release" class="entry-title" rel="bookmark">adva-cms2 0.0.1 - developer sneak peak preview release</a>
+</h2>
+<div class="meta">posted on <abbr class="updated" title="2010-10-25 00:00:00 UTC">Mon, 25 Oct 2010
+</abbr>
+
+</div>
+
+<p>For the past several months we&#8217;ve been working hard on a complete rewrite of adva-cms targeting Rails 3.</p>
+<p>This new version turns out to be so different that we decided to change the name to <a href="http://github.com/svenfuchs/adva-cms2">adva-cms2</a>. It incorporates most of the main concepts of <a href="http://github.com/svenfuchs/adva_cms">adva-cms&#8217;</a> core engines, such as &#8220;site&#8221; and a &#8220;section tree&#8221; being the central domain model, segmentation of the entire code base into encapsulated, reusable engines and making things work as a framework and basis for your custom applications built on top of it.</p>
+<p>But adva-cms2 is also very different from its predecessor in terms of its implementation concepts and details.</p>
+<p>We&#8217;ve focused a lot more on the framework part of the features that will enable us (and hopefully, you) to build stuff on top of adva-cms2 in a much easier fashion than the original adva-cms. At the same time (and because of this), we haven&#8217;t actually implemented many of the user level features, yet. For example, the shipped <a href="http://github.com/svenfuchs/adva-cms2/adva-blog">blog engine</a> is still pretty minimalistic. We&#8217;ve implemented just enough functionality to:</p>
+<p>1. get a basic, minimalistic blog engine going<br />
+2. use this as a use case for proving low-level framework and architecture features</p>
+<p>Similarly, we&#8217;ve also written stuff that already actually uses adva-cms2 but that we just can&#8217;t publish as open source just yet. Amongst these things is adva-shop, which implements things like product catalogs and shopping carts.  adva-assets is a support engine that you probably know from the original adva-cms. We&#8217;ve used <a href="http://github.com/svenfuchs/adva-cms2/adva-static">adva-static</a> to export and publish a few static websites that we are maintaining. And finally we&#8217;re also working on a project for a customer that uses and integrates all of this.</p>
+<p>Doing so, we&#8217;ve gathered quite a few use cases for using different parts of adva-cms2 in various combinations. From what we&#8217;ve seen so far the system works out very nicely.</p>
+<p>In the past, adva-cms already was built using quite a bunch of plugins and gems that either were developed especially for or with adva-cms in mind. With adva-cms2 we&#8217;ve taken that a little bit further and extracted even more functionality and re-worked the existing plugins, making all of them gems. Some of the gems that have gotten a more or less complete overhaul are: <a href="http://github.com/svenfuchs/simple_nested_set">simple_nested_set</a>, <a href="http://github.com/svenfuchs/simple_slugs">simple_slugs</a>, <a href="http://github.com/rwrede/simple_table">simple_table</a>, <a href="http://github.com/svenfuchs/simple_taggable">simple_taggable</a>, <a href="http://github.com/svenfuchs/reference_tracking">reference_tracking</a>, <a href="http://github.com/svenfuchs/globalize3">globalize3</a> and <a href="http://github.com/svenfuchs/routing-filter">routing-filter</a>. Some gems that were developed more or less for their use in adva-cms2 are: <a href="http://github.com/ingoweiss/gem_patching">gem_patching</a>, <a href="http://github.com/svenfuchs/gem-release">gem_release</a>, <a href="http://github.com/svenfuchs/minimal">minimal/template</a>, <a href="http://github.com/svenfuchs/inherited_resources_helpers">inherited_resources_helpers</a>, <a href="http://github.com/svenfuchs/rack-cache-tags">rack-cache-tags</a> and <a href="http://github.com/svenfuchs/rack-cache-purge">rack-cache-purge</a>.</p>
+<p>We are really excited about now opening up the repository to the public.</p>
+<p>Keep in mind that it&#8217;s a preview release though. You&#8217;ll probably run into some problems and there are rough edges still need to be smoothed. But if you know what you&#8217;re doing then you should be able to work with this code and understand our ideas and where we&#8217;re heading.</p>
+<p>Of course we very much appreciate any help with adva-cms2! Be it help with code, bug reports, documentation or just discussion about improving the concepts, we&#8217;d love to see you get involved.</p>
+<p>If you do want to contribute code, please notice that we&#8217;re using <a href="http://github.com/nvie/gitflow">git-flow</a> as a development tool. If you&#8217;re not familiar git-flow and don&#8217;t care to learn about it, that&#8217;s not a problem. All you really need, is to remember that all development is done in terms of &#8216;feature&#8217; branches taken from the &#8216;develop&#8217; branch. We don&#8217;t develop on the master branch.</p>
+<p>So we hope you like adva-cms2 as much as we do, and if you have any questions about implementation, how to contribute, or things that you&#8217;re not clear about, please post to the <a href="http://groups.google.com/group/adva-cms">mailinglist</a> or visit us in our <span class="caps">IRC</span> channel: <a href="irc://irc.freenode.net#adva-cms">irc.freenode.net#adva-cms</a>.</p>
+<p>We&#8217;re glad to help!</p>
+<p><a href="http://svenfuchs.com"><img src="http://www.gravatar.com/avatar/402602a60e500e85f2f5dc1ff3648ecb" style="width:40px;" alt="" /></a> <a href="http://blog.ingoweiss.com"><img src="http://www.gravatar.com/avatar/5a7ada799c448f9c1e5eec02194b14e9" style="width:40px;" alt="" /></a> <a href="http://github.com/flooose"><img src="http://www.gravatar.com/avatar/25393e08b802f62823636914f9297d20" style="width:40px;" alt="" /></a> <a href="http://github.com/kronn"><img src="http://www.gravatar.com/avatar/b474b21a15938494d690805e9b319a12" style="width:40px;" alt="" /></a> <a href="http://github.com/rwrede"><img src="http://www.gravatar.com/avatar/9369b696c7fca2c188a52f562a1e3ff4" style="width:40px;" alt="" /></a> <a href="http://github.com/johanness"><img src="http://github.com/images/gravatars/gravatar-80.png" style="width:40px;" alt="" /></a> <a href="http://github.com/michaxy"><img src="http://www.gravatar.com/avatar/b2d40219b2c2bf3971f3ba4636300451" style="width:40px;" alt="" /></a></p>
+</div>
+
+</div>
+</div>
+<div id="footer"><ul class="left"><li>Made with <a href="http://github.com/svenfuchs/adva-cms2">adva cms 2</a></li>
+</ul>
+<ul class="right"></ul>
+</div>
+</body>
+</html>
