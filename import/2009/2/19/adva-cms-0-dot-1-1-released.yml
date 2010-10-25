@@ -1,24 +1,11 @@
 ---
   title: adva-cms 0.1.1 released!
   body: |
-    <div id="article_15" class="entry clearing">
-    <div class="content">
-    <h2>
-    <a href="/2009/2/19/adva-cms-0-1-1-released" class="show article" id="show_article_15" title="Show">adva-cms 0.1.1 released!</a>
-    </h2>
-    <div class="meta">
-    <p>
-    posted by Marko Seppä
-    on February 19, 2009 12:10
-    </p>
-    </div>
     <p>One month has passed since the release of adva-cms 0.1.1 and things have
     moved quite a bit since then. The changes include a complete revision of our
     testing philosophy, the migration to more current plugins/gems (like
         paperclip and stringex), the removal of some rather community-related engines,
     lots of fixes and interesting features and additions.</p>
-    <p>Read more about this release and our plans for the next release.</p>
-    <p></p>
     <h3>Farewell to heavy stubbing and mocking</h3>
     <p>One of the biggest changes we did was to completely revisit our testing
     philosophy.</p>
@@ -128,5 +115,3 @@
     ,
     <a href="http://ananasblau.com/">Thomas R Koll</a>
     </p>
-    </div>
-    </div>

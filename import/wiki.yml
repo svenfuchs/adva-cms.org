@@ -5,11 +5,9 @@
 
     <div class="content">
 
-    <h2>adva cms wiki</h2>
-
     <p>
 
-    Welcome to the 
+    Welcome to the
 
     <strong>adva cms</strong>
 
@@ -21,7 +19,7 @@
 
     <a href="/wiki/wikipages/getting-started">Getting started</a>
 
-    · 
+    ·
 
     <a href="/wiki/wikipages/howtos">Howtos</a>
 
@@ -31,11 +29,11 @@
 
     <p>
 
-    adva cms is a cutting edge open source cms application plattform based on 
+    adva cms is a cutting edge open source cms application plattform based on
 
     <a href="http://rubyonrails.org/">Ruby on Rails</a>
 
-    and 
+    and
 
     <a href="http://rails-engines.org/">Rails Engines</a>
 
@@ -59,7 +57,7 @@
 
     <strong>Blog</strong>
 
-    : blogging system heavily inspired by 
+    : blogging system heavily inspired by
 
     <a href="http://mephistoblog.com/" title="Mephisto—The best blogging system ever">Mephisto</a>
 
@@ -69,7 +67,7 @@
 
     <strong>Wiki</strong>
 
-    : a wiki engine inspired by 
+    : a wiki engine inspired by
 
     <a href="http://signalwiki.com/" title="Signal Wiki - About">Signal Wiki</a>
 
@@ -79,7 +77,7 @@
 
     <strong>Forum</strong>
 
-    : a forum system inspired by 
+    : a forum system inspired by
 
     <a href="http://beast.caboo.se/">Beast</a>
 
@@ -103,11 +101,11 @@
 
     <strong>Spam control</strong>
 
-    : a configurable spam filter chain makes it easy to hook in the spam control system of your choice (currently supporting 
+    : a configurable spam filter chain makes it easy to hook in the spam control system of your choice (currently supporting
 
     <a href="http://akismet.com/" title="Stop Comment Spam and Trackback Spam « Akismet">Akismet</a>
 
-    and 
+    and
 
     <a href="http://defensio.com/" title="Defensio · Outsmarting Evil Spam">Defensio</a>
 
@@ -141,7 +139,7 @@
 
     <br>
 
-    As adva cms uses Rails Engines as a foundation users can choose to pick only 
+    As adva cms uses Rails Engines as a foundation users can choose to pick only
 
     those engines (think: modules) that suit their needs and omit others, thus making the system
 
@@ -163,11 +161,11 @@
 
     intended to work as a foundation so you can build your own applications on top
 
-    of it. As adva cms is shipped as a collection of Rails Engines the Rails’ 
+    of it. As adva cms is shipped as a collection of Rails Engines the Rails’
 
     <code>app/</code>
 
-    folder is empty: that’s 
+    folder is empty: that’s
 
     <em>your</em>
 
@@ -185,7 +183,7 @@
 
     it very fast and easily scalable because from the second request on your
 
-    front-end server of choice takes over and delivers statically cached 
+    front-end server of choice takes over and delivers statically cached
 
     <span class="caps">HTML</span>
 
@@ -203,13 +201,13 @@
 
     adva cms was build with Internationalization in mind right from the start and
 
-    will use Rails 2.2’s I18n 
+    will use Rails 2.2’s I18n
 
     <span class="caps">API</span>
 
     and Globalize2 to enable multilanguage sites
 
-    transparently. 
+    transparently.
 
     </li>
 
@@ -227,12 +225,6 @@
 
     </li>
 
-    <li>
-
-    <a href="/wiki">return to current revision</a>
-
-    </li>
-
     </ul>
 
     <p>
@@ -241,7 +233,7 @@
 
     last updated: August 12, 2010 11:15
 
-    by: 
+    by:
 
     <a href="http://">Christopher Floess</a>
 

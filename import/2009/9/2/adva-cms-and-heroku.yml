@@ -1,17 +1,6 @@
 ---
   title: adva-cms and heroku
   body: |
-    <div id="article_44" class="entry clearing">
-    <div class="content">
-    <h2>
-    <a href="/2009/9/2/adva-cms-and-heroku" class="show article" id="show_article_44" title="Show">adva-cms and heroku</a>
-    </h2>
-    <div class="meta">
-    <p>
-    posted by Marko Seppä
-    on September 02, 2009 09:12
-    </p>
-    </div>
     <p>
     <a href="http://safewlabs.com/blog/2009/8/7/install-adva-cms-on-heroku">This</a>
     might be interesting for those of you who want to use current adva-cms with heroku.
@@ -22,5 +11,3 @@
     <p>
     Currently things like themes or picture galleries are not working because of the read only file system of heroku, but this might change in the future. We will keep you posted!
     </p>
-    </div>
-    </div>

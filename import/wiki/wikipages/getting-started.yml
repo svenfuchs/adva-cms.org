@@ -2,65 +2,53 @@
   title: Getting Started
   body: |
     <div id="wikipage_1" class="entry clearing">
-  
+
     <div class="content">
-  
+
     <h2>Getting started</h2>
-  
+
     <p>Getting started with adva cms is pretty simple.</p>
-  
+
     <p>
-  
+
     Just follow
-  
+
     <a href="http://github.com/svenfuchs/adva_cms/tree/master">
-  
+
     <span class="caps">README</span>
-  
+
     </a>
-  
+
     instructions and you are done!
-  
+
     </p>
-  
+
     </div>
-  
+
     <div class="wiki meta">
-  
+
     <ul class="links">
-  
+
     <li>
-  
+
     <a href="/wiki/wikipages">all pages</a>
-  
+
     </li>
-  
+
     <li>
-  
+
     <a href="/wiki">return to home</a>
-  
+
     </li>
-  
-    <li>
-  
-    <a href="/wiki/wikipages/getting-started">return to current revision</a>
-  
-    </li>
-  
-    <li class="visible_for user user-1 content-1-author section-2-moderator site-1-admin superuser">
-  
-    <a href="/wiki/wikipages/getting-started?version=1" onclick="if (confirm('Are you sure you want to rollback to this version?')) { var f = document.createElement('form'); f.style.display = 'none'; this.parentNode.appendChild(f); f.method = 'POST'; f.action = this.href;var m = document.createElement('input'); m.setAttribute('type', 'hidden'); m.setAttribute('name', '_method'); m.setAttribute('value', 'put'); f.appendChild(m);var s = document.createElement('input'); s.setAttribute('type', 'hidden'); s.setAttribute('name', 'authenticity_token'); s.setAttribute('value', 'wAvjgUd/s1dlV+81qnt5omK0zuZfwbdPD9Gi2/jwrac='); f.appendChild(s);f.submit(); };return false;">rollback to this revision</a>
-  
-    </li>
-  
+
     </ul>
-  
+
     <p>  revision: 1
-  
+
     last updated: May 29, 2009 13:10
-  
+
     by: </p>
-  
+
     </div>
-  
+
     </div>

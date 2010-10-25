@@ -6,21 +6,39 @@ PATH
       truncate_html
 
 PATH
+  remote: /Volumes/Users/sven/Development/projects/adva-cms2/adva-cache
+  specs:
+    adva-cache (0.0.1)
+      adva-core
+      rack-cache-purge (= 0.0.2)
+      rack-cache-tags (= 0.0.6)
+      reference_tracking (= 0.0.4)
+
+PATH
   remote: /Volumes/Users/sven/Development/projects/adva-cms2/adva-core
   specs:
     adva-core (0.0.1)
-      gem_patching
+      gem_patching (= 0.0.2)
       inherited_resources (= 1.1.2)
-      inherited_resources_helpers (= 0.0.10)
-      minimal (= 0.0.20)
-      nbrew-country_select
+      inherited_resources_helpers (= 0.0.13)
+      kronn-has_many_polymorphs (= 3.0.0)
+      minimal (= 0.0.22)
+      nbrew-country_select (= 0.0.1)
       rails (= 3.0.0)
       routing-filter (= 0.1.7)
-      silence_log_tailer
-      simple_form
-      simple_nested_set (= 0.0.13)
+      silence_log_tailer (= 0.0.1)
+      simple_form (= 1.2.2)
+      simple_nested_set (= 0.0.15)
       simple_slugs (= 0.0.7)
-      simple_table (= 0.0.5)
+      simple_table (= 0.0.7)
+
+PATH
+  remote: /Volumes/Users/sven/Development/projects/adva-cms2/adva-markup
+  specs:
+    adva-markup (0.0.1)
+      RedCloth
+      adva-core
+      rdiscount
 
 PATH
   remote: /Volumes/Users/sven/Development/projects/adva-cms2/adva-static
@@ -31,16 +49,10 @@ PATH
       rack-cache
       watchr
 
-PATH
-  remote: /Volumes/Users/sven/Development/projects/adva-cms2/adva-user
-  specs:
-    adva-user (0.0.1)
-      adva-core
-      devise (= 1.1.2)
-
 GEM
   remote: http://rubygems.org/
   specs:
+    RedCloth (4.2.3)
     abstract (1.0.0)
     actionmailer (3.0.0)
       actionpack (= 3.0.0)
@@ -70,11 +82,8 @@ GEM
     activesupport (3.0.0)
     arel (1.0.1)
       activesupport (~> 3.0.0)
-    bcrypt-ruby (2.1.2)
     builder (2.1.2)
-    devise (1.1.2)
-      bcrypt-ruby (~> 2.1.2)
-      warden (~> 0.10.7)
+    columnize (0.3.1)
     erubis (2.6.6)
       abstract (>= 1.0.0)
     gem_patching (0.0.2)
@@ -83,20 +92,27 @@ GEM
     inherited_resources (1.1.2)
       has_scope (~> 0.5.0)
       responders (~> 0.6.0)
-    inherited_resources_helpers (0.0.10)
+    inherited_resources_helpers (0.0.13)
+    kronn-has_many_polymorphs (3.0.0)
+      activerecord
+    linecache (0.43)
     mail (2.2.5)
       activesupport (>= 2.3.6)
       mime-types
       treetop (>= 1.4.5)
     mime-types (1.16)
-    minimal (0.0.20)
-      actionpack (>= 3.0.0.beta2)
+    minimal (0.0.22)
+      actionpack (>= 3.0.0)
+      activesupport (>= 3.0.0)
     nbrew-country_select (0.0.1)
     nokogiri (1.4.3.1)
     polyglot (0.3.1)
     rack (1.2.1)
     rack-cache (0.5.3)
       rack (>= 0.4)
+    rack-cache-purge (0.0.2)
+      rack-cache (~> 0.5)
+    rack-cache-tags (0.0.6)
     rack-mount (0.6.13)
       rack (>= 1.0.0)
     rack-test (0.5.4)
@@ -115,27 +131,32 @@ GEM
       rake (>= 0.8.4)
       thor (~> 0.14.0)
     rake (0.8.7)
+    rdiscount (1.6.5)
+    reference_tracking (0.0.4)
     responders (0.6.2)
     routing-filter (0.1.7)
       actionpack
+    ruby-debug (0.10.3)
+      columnize (>= 0.1)
+      ruby-debug-base (~> 0.10.3.0)
+    ruby-debug-base (0.10.3)
+      linecache (>= 0.3)
     silence_log_tailer (0.0.1)
     simple_form (1.2.2)
-    simple_nested_set (0.0.13)
+    simple_nested_set (0.0.15)
       activerecord (~> 3.0.0)
       activesupport
       gem_patching
     simple_slugs (0.0.7)
-    simple_table (0.0.5)
-      actionpack (~> 3.0.0.rc)
-      activesupport (~> 3.0.0.rc)
+    simple_table (0.0.7)
+      actionpack (~> 3.0.0)
+      activesupport (~> 3.0.0)
     sqlite3-ruby (1.2.5)
     thor (0.14.0)
     treetop (1.4.8)
       polyglot (>= 0.3.1)
     truncate_html (0.4.0)
     tzinfo (0.3.23)
-    warden (0.10.7)
-      rack (>= 1.0.0)
     watchr (0.7)
 
 PLATFORMS
@@ -143,8 +164,10 @@ PLATFORMS
 
 DEPENDENCIES
   adva-blog!
+  adva-cache!
   adva-core!
+  adva-markup!
   adva-static!
-  adva-user!
   rails (= 3.0.0)
+  ruby-debug
   sqlite3-ruby (= 1.2.5)

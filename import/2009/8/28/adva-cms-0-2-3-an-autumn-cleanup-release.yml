@@ -1,19 +1,7 @@
 ---
   title: 'adva-cms 0.2.3: an autumn cleanup release'
   body: |
-    <div id="article_43" class="entry clearing">
-    <div class="content">
-    <h2>
-    <a href="/2009/8/28/adva-cms-0-2-3-an-autumn-cleanup-release" class="show article" id="show_article_43" title="Show">adva-cms 0.2.3, an autumn cleanup release</a>
-    </h2>
-    <div class="meta">
-    <p>
-    posted by Clemens Koffler
-    on August 28, 2009 14:30
-    </p>
-    </div>
-    This month we have a release that contains tons of small changes and refactorings. We basically cleaned up the adva-cms code by removing legacy code and improving the quality of code where we found some code smells. We have also put some effort into making the adva-cms test suite more flexible when working with custom apps. There are a bunch of bug fixes again and also a long requested feature for site finding is now implemented. Oh, and we have cooler help hints now, too!
-    <p></p>
+    <p>This month we have a release that contains tons of small changes and refactorings. We basically cleaned up the adva-cms code by removing legacy code and improving the quality of code where we found some code smells. We have also put some effort into making the adva-cms test suite more flexible when working with custom apps. There are a bunch of bug fixes again and also a long requested feature for site finding is now implemented. Oh, and we have cooler help hints now, too!</p>
     <h3>Whats new in 0.2.3 then?</h3>
     <ul>
     <h4>Site#find_by_host! behaviour change ... </h4>
@@ -66,7 +54,7 @@
     <h4>... cooler help hints ... </h4>
     <ul>
     <li>
-    We started to use 
+    We started to use
     <a href="http://craigsworks.com/projects/qtip/">qTip</a>
     - a jQuery tooltip library - for displaying our help hints and they are much cooler than before! Enjoy.
     </li>
@@ -120,12 +108,12 @@
     </ul>
     <h3>Support and contribution</h3>
     <p>
-    We are still more than happy to receive any new translations of adva-cms from you guys! Also, you can contribute to our 
+    We are still more than happy to receive any new translations of adva-cms from you guys! Also, you can contribute to our
     <a href="http://groups.google.com/group/adva-cms/web/guide?hl=en">guide</a>
     !
     </p>
     <p>
-    For any questions regarding adva-cms please drop by in #adva-cms @ irc.freenode.net or send an email to 
+    For any questions regarding adva-cms please drop by in #adva-cms @ irc.freenode.net or send an email to
     <a href="http://groups.google.com/group/adva-cms">our mailing-list</a>
     . We are happy to help you out!
     </p>
@@ -158,5 +146,3 @@
     <a href="https://www.xing.com/profile/mark_schlusnus">Mark Schlusnus</a>
     </p>
     </ul>
-    </div>
-    </div>

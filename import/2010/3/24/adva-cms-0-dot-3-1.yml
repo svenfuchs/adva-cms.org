@@ -1,46 +1,6 @@
 ---
   title: adva-cms 0.3.1
   body: |
-    <div id="article_47" class="entry clearing">
-
-    <div class="content">
-
-    <h2>
-
-    <a href="/2010/3/24/adva-cms-0-3-1" class="show article" id="show_article_47" title="Show">adva-cms 0.3.1</a>
-
-    </h2>
-
-    <div class="meta">
-
-    <p>
-
-    posted by Christopher Floess
-
-    on March 24, 2010 12:24
-
-    </p>
-
-    </div>
-
-    <p>
-
-    A lot of small things have changed in adva_cms since 0.3.0!
-
-    </p>
-
-    <p>
-
-    First and most visibly, two plugins have been added and one engine got
-
-    transformed into a plugin.  But there are many fixes and tweaks that make
-
-    adva_cms better.
-
-    </p>
-
-    <p></p>
-
     <p>
 
     A lot of small things have changed in adva_cms since 0.3.0!
@@ -63,7 +23,7 @@
 
     have the newest version, the CKEditor, fully integrated into adva_cms with a
 
-    simple 
+    simple
 
     <code>rake adva:install plugin=adva_ckeditor</code>
 
@@ -163,7 +123,7 @@
 
     We could go on listing all the small changes and bug fixes now, instead
 
-    we just want to highlight that caching got better. Also thanks to Alan 
+    we just want to highlight that caching got better. Also thanks to Alan
 
     Gutierrez for sending a bug fix patch.
 
@@ -174,7 +134,3 @@
     Details can be found in the changelog as usual.
 
     </p>
-
-    </div>
-
-    </div>

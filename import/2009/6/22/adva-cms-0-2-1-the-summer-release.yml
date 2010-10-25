@@ -1,19 +1,7 @@
 ---
   title: 'adva-cms 0.2.1: The summer release!'
   body: |
-    <div id="article_18" class="entry clearing">
-    <div class="content">
-    <h2>
-    <a href="/2009/6/22/adva-cms-0-2-1-the-summer-release" class="show article" id="show_article_18" title="Show">adva-cms 0.2.1: The summer release!</a>
-    </h2>
-    <div class="meta">
-    <p>
-    posted by Marko Seppä
-    on June 22, 2009 10:19
-    </p>
-    </div>
-    We are happy to announce adva-cms 0.2.1 after a little longer break since our last release. This release introduces things like custom tab indexes for the form builder, two new cells, bunch of bug fixes and other additions. We also did some battle testing on the spam filters and made them more reliable to make sure they work as expected.
-    <p></p>
+    <p>We are happy to announce adva-cms 0.2.1 after a little longer break since our last release. This release introduces things like custom tab indexes for the form builder, two new cells, bunch of bug fixes and other additions. We also did some battle testing on the spam filters and made them more reliable to make sure they work as expected.</p>
     <h3>Whats new?</h3>
     <ul>
     <h4>Two new cells ... </h4>
@@ -26,9 +14,9 @@
     </li>
     </ul>
     <p>
-    Some instructions how to use these cells have been added to the adva-cms 
+    Some instructions how to use these cells have been added to the adva-cms
     <a href="http://wiki.github.com/svenfuchs/adva_cms">FAQ</a>
-    . There's an entry about cells on the section 6.11 on our 
+    . There's an entry about cells on the section 6.11 on our
     <a href="http://groups.google.com/group/adva-cms/web/guide?hl=en">guide</a>
     - also, feel free to contribute to the guide!
     </p>
@@ -59,7 +47,7 @@
     <h4>... some other additions ...</h4>
     <ul>
     <li>
-    adva_meta_tags plugin adds meta tags to the entire site. This adds the site's metatags to articles by default when an article does not have any. 
+    adva_meta_tags plugin adds meta tags to the entire site. This adds the site's metatags to articles by default when an article does not have any.
     </li>
     <li>
     Sections now have a publishing date and they are shown on frontend only if they have been published. The only exception to this is the root section (your home section). Sections are marked as published if the content of section is published, and other way around, content becomes unpublished if section is marked unpublished. This also works on nested sections.
@@ -75,16 +63,16 @@
     <h4>... some contributions ...</h4>
     <ul>
     <li>
-    Added application.js to common javascript extension. This makes sure that your applications application.js is loaded with adva-cms. Contributed by 
+    Added application.js to common javascript extension. This makes sure that your applications application.js is loaded with adva-cms. Contributed by
     <a href="http://github.com/nachokb">Ignacio Carrera</a>
     </li>
     <li>
-    adva_cells plugin is now part of adva:core installation since cells are quite often used feature. Contributed by 
+    adva_cells plugin is now part of adva:core installation since cells are quite often used feature. Contributed by
     <a href="http://blog.theurbanrebellion.com/">Michael Christenson II</a>
     </li>
     <li>  French rails locale by Jorge Dias. </li>
     <li>
-    Some translation corrections to adva_photos by 
+    Some translation corrections to adva_photos by
     <a href="http://github.com/mitchlloyd">mitchlloyd</a>
     </li>
     </ul>
@@ -114,12 +102,12 @@
     </ul>
     <h3>Support and contribution</h3>
     <p>
-    We are still more than happy to receive any new translations of adva-cms from you guys! Also you can contribute to our 
+    We are still more than happy to receive any new translations of adva-cms from you guys! Also you can contribute to our
     <a href="http://groups.google.com/group/adva-cms/web/guide?hl=en">guide</a>
-    ! 
+    !
     </p>
     <p>
-    For any questions regarding adva-cms please drop by in #adva-cms @ irc.freenode.net or send an email to 
+    For any questions regarding adva-cms please drop by in #adva-cms @ irc.freenode.net or send an email to
     <a href="http://groups.google.com/group/adva-cms">our mailing-list</a>
     . We are happy to help you!
     </p>
@@ -152,5 +140,3 @@
     <a href="https://www.xing.com/profile/mark_schlusnus">Mark Schlusnus</a>
     </p>
     </ul>
-    </div>
-    </div>

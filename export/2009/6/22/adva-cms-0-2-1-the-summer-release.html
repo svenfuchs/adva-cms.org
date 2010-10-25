@@ -1,50 +1,32 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
-  <head>
-    <meta http-equiv="Content-type" content="text/html; charset=utf-8" />   
-    <title>adva-cms</title>
-    <link href="/stylesheets/default.css?1286527061" media="screen" rel="stylesheet" type="text/css" />
-<link href="/stylesheets/layout.css?1286527061" media="screen" rel="stylesheet" type="text/css" />
-<link href="/stylesheets/styles.css?1286527061" media="screen" rel="stylesheet" type="text/css" />
-<link href="/stylesheets/widgets.css?1286527061" media="screen" rel="stylesheet" type="text/css" />
-<link href="/stylesheets/comments.css?1286527061" media="screen" rel="stylesheet" type="text/css" />
-<link href="/stylesheets/forms.css?1286527061" media="screen" rel="stylesheet" type="text/css" />
-    
-    
-  </head>
-  <body>   
-    <div id="header">
-      <h1>adva-cms</h1>
-      <h2></h2>
-      <ul id="sections">
-        <li class="item active">
-          <a href="/" id="show_section">Blog</a>
-        </li>
-        <li class="item">
-          <a href="/wiki" id="show_section">Wiki</a>
-        </li>
-      </ul>
-    </div>
-    
-    <div id="main">
-      <div id="flashes">
-      </div>
-      <div id="content">
-        <div id="post_91" class="entry clearing">
-  <div class="content">
-    <div id="article_18" class="entry clearing">
-<div class="content">
-<h2>
-<a href="/2009/6/22/adva-cms-0-2-1-the-summer-release" class="show article" id="show_article_18" title="Show">adva-cms 0.2.1: The summer release!</a>
-</h2>
-<div class="meta">
-<p>
-posted by Marko Seppä
-on June 22, 2009 10:19
-</p>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html><head><meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+<meta generator="adva-cms2" />
+<title>adva-cms</title>
+<link href="/stylesheets/adva-core/common/reset.css" media="screen" rel="stylesheet" type="text/css" />
+<link href="/stylesheets/adva-core/common/layout.css" media="screen" rel="stylesheet" type="text/css" />
+<link href="/stylesheets/adva-core/common/styles.css" media="screen" rel="stylesheet" type="text/css" />
+<link href="/stylesheets/adva-core/common/forms.css" media="screen" rel="stylesheet" type="text/css" />
+<link href="/stylesheets/adva-core/default/layout.css" media="screen" rel="stylesheet" type="text/css" />
+<link href="/stylesheets/adva-core/default/styles.css" media="screen" rel="stylesheet" type="text/css" />
+
+
+</head>
+<body><div id="page"><div id="header"><h1>adva-cms</h1>
+<ul id="menu"><li class="active"><a href="/">Home</a>
+</li>
+<li><a href="/wiki">Wiki</a>
+</li>
+</ul>
+
 </div>
-We are happy to announce adva-cms 0.2.1 after a little longer break since our last release. This release introduces things like custom tab indexes for the form builder, two new cells, bunch of bug fixes and other additions. We also did some battle testing on the spam filters and made them more reliable to make sure they work as expected.
-<p></p>
+<div id="main"><div class="post"><h2><a href="/2009/6/22/adva-cms-0-2-1-the-summer-release" class="entry-title" rel="bookmark">adva-cms 0.2.1: The summer release!</a>
+</h2>
+<div class="meta">posted on <abbr class="updated" title="2009-06-22 00:00:00 UTC">Mon, 22 Jun 2009
+</abbr>
+
+</div>
+
+<p>We are happy to announce adva-cms 0.2.1 after a little longer break since our last release. This release introduces things like custom tab indexes for the form builder, two new cells, bunch of bug fixes and other additions. We also did some battle testing on the spam filters and made them more reliable to make sure they work as expected.</p>
 <h3>Whats new?</h3>
 <ul>
 <h4>Two new cells ... </h4>
@@ -57,9 +39,9 @@ A contact mailer cell adds contact forms to your content. Contact mailer current
 </li>
 </ul>
 <p>
-Some instructions how to use these cells have been added to the adva-cms 
+Some instructions how to use these cells have been added to the adva-cms
 <a href="http://wiki.github.com/svenfuchs/adva_cms">FAQ</a>
-. There's an entry about cells on the section 6.11 on our 
+. There's an entry about cells on the section 6.11 on our
 <a href="http://groups.google.com/group/adva-cms/web/guide?hl=en">guide</a>
 - also, feel free to contribute to the guide!
 </p>
@@ -90,7 +72,7 @@ User now has multiple options to choose where he wants the given tab to be place
 <h4>... some other additions ...</h4>
 <ul>
 <li>
-adva_meta_tags plugin adds meta tags to the entire site. This adds the site's metatags to articles by default when an article does not have any. 
+adva_meta_tags plugin adds meta tags to the entire site. This adds the site's metatags to articles by default when an article does not have any.
 </li>
 <li>
 Sections now have a publishing date and they are shown on frontend only if they have been published. The only exception to this is the root section (your home section). Sections are marked as published if the content of section is published, and other way around, content becomes unpublished if section is marked unpublished. This also works on nested sections.
@@ -106,16 +88,16 @@ A bunch of German translations have been added to adva-cms.
 <h4>... some contributions ...</h4>
 <ul>
 <li>
-Added application.js to common javascript extension. This makes sure that your applications application.js is loaded with adva-cms. Contributed by 
+Added application.js to common javascript extension. This makes sure that your applications application.js is loaded with adva-cms. Contributed by
 <a href="http://github.com/nachokb">Ignacio Carrera</a>
 </li>
 <li>
-adva_cells plugin is now part of adva:core installation since cells are quite often used feature. Contributed by 
+adva_cells plugin is now part of adva:core installation since cells are quite often used feature. Contributed by
 <a href="http://blog.theurbanrebellion.com/">Michael Christenson II</a>
 </li>
 <li>  French rails locale by Jorge Dias. </li>
 <li>
-Some translation corrections to adva_photos by 
+Some translation corrections to adva_photos by
 <a href="http://github.com/mitchlloyd">mitchlloyd</a>
 </li>
 </ul>
@@ -145,12 +127,12 @@ And much more!
 </ul>
 <h3>Support and contribution</h3>
 <p>
-We are still more than happy to receive any new translations of adva-cms from you guys! Also you can contribute to our 
+We are still more than happy to receive any new translations of adva-cms from you guys! Also you can contribute to our
 <a href="http://groups.google.com/group/adva-cms/web/guide?hl=en">guide</a>
-! 
+!
 </p>
 <p>
-For any questions regarding adva-cms please drop by in #adva-cms @ irc.freenode.net or send an email to 
+For any questions regarding adva-cms please drop by in #adva-cms @ irc.freenode.net or send an email to
 <a href="http://groups.google.com/group/adva-cms">our mailing-list</a>
 . We are happy to help you!
 </p>
@@ -183,29 +165,14 @@ For any questions regarding adva-cms please drop by in #adva-cms @ irc.freenode.
 <a href="https://www.xing.com/profile/mark_schlusnus">Mark Schlusnus</a>
 </p>
 </ul>
-</div>
-</div>
 
-  </div>
 </div>
 
-      </div>
-    </div>
-
-    <div id="sidebar">
-      <p>
-        adva-cms is an open source cms platform based on Ruby on Rails and Rails Engines.
-      </p>
-      <h4>Resources</h4>
-      <p>
-        <a href="http://github.com/svenfuchs/adva_cms">GitHub Repository</a><br>
-        <a href="http://artweb-design.lighthouseapp.com/projects/13992-adva_cms">Lighthouse Tracker</a><br>
-        <a href="http://groups.google.com/group/adva-cms">Google Mailinglist</a><br>
-        <a href="irc://irc.freenode.net#adva-cms">irc.freenode.net#adva-cms</a>
-      </p>
-      
-      
-    </div>
-    
-  </body>
+</div>
+</div>
+<div id="footer"><ul class="left"><li>Made with <a href="http://github.com/svenfuchs/adva-cms2">adva cms 2</a></li>
+</ul>
+<ul class="right"></ul>
+</div>
+</body>
 </html>

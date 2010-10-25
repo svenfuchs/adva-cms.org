@@ -1,19 +1,7 @@
 ---
   title: 'adva-cms 0.2.2: The bug hunter release'
   body: |
-    <div id="article_42" class="entry clearing">
-    <div class="content">
-    <h2>
-    <a href="/2009/7/31/adva-cms-0-2-2-the-bug-hunter-release" class="show article" id="show_article_42" title="Show">adva-cms 0.2.2: The bug hunter release</a>
-    </h2>
-    <div class="meta">
-    <p>
-    posted by Marko Seppä
-    on July 31, 2009 12:16
-    </p>
-    </div>
-    This month we are happy to announce a bug fix release for the adva-cms; that's why we call this release "the bug hunter release". It has bunch of bug fixes and it also adds some minor features and changes like 'email notification switch' (which allows you to disable and enable email notifications per site), translatable section and category titles, and much more. We also improved adva-themes and the result is more robust and user friendly theming experience for you.
-    <p></p>
+    <p>This month we are happy to announce a bug fix release for the adva-cms; that's why we call this release "the bug hunter release". It has bunch of bug fixes and it also adds some minor features and changes like 'email notification switch' (which allows you to disable and enable email notifications per site), translatable section and category titles, and much more. We also improved adva-themes and the result is more robust and user friendly theming experience for you.</p>
     <h3>So whats changed?</h3>
     <ul>
     <h4>Translatable section and category titles ... </h4>
@@ -111,12 +99,12 @@
     </ul>
     <h3>Support and contribution</h3>
     <p>
-    We are still more than happy to receive any new translations of adva-cms from you guys! You can also contribute to our 
+    We are still more than happy to receive any new translations of adva-cms from you guys! You can also contribute to our
     <a href="http://groups.google.com/group/adva-cms/web/guide?hl=en">guide</a>
     .
     </p>
     <p>
-    For any questions regarding adva-cms please drop by in #adva-cms @ irc.freenode.net or send an email to 
+    For any questions regarding adva-cms please drop by in #adva-cms @ irc.freenode.net or send an email to
     <a href="http://groups.google.com/group/adva-cms">our mailing-list</a>
     . We are happy to help you!
     </p>
@@ -149,5 +137,3 @@
     <a href="https://www.xing.com/profile/mark_schlusnus">Mark Schlusnus</a>
     </p>
     </ul>
-    </div>
-    </div>

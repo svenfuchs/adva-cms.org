@@ -1,17 +1,6 @@
 ---
   title: adva-cms 0.1.0 released!
   body: |
-    <div id="article_14" class="entry clearing">
-    <div class="content">
-    <h2>
-    <a href="/2009/1/20/adva-cms-0-1-0-released" class="show article" id="show_article_14" title="Show">adva-cms 0.1.0 released!</a>
-    </h2>
-    <div class="meta">
-    <p>
-    posted by Marko Seppä
-    on January 20, 2009 14:29
-    </p>
-    </div>
     <p>
     Almost a year after we have started the development we are happy to announce the first release of adva-cms! This still is an experimental release and you may encounter bugs and some parts have some rough edges.
     </p>
@@ -25,7 +14,6 @@
     <p>
     The idea behind adva-cms is that you can plug in different engines, depending on your need. If you only want a blog you do not need to care about other engines than the blog engine. And if you later decide that you need a forum, well, you can just create it by using the forum engine. Unlike other Rails projects, the fresh copy of adva-cms leaves your app directory completely empty. This is meant to be an area for your own application that runs on top of adva-cms as a foundation.
     </p>
-    <p></p>
     <p>
     <strong>This first release of adva-cms ships with:</strong>
     </p>
@@ -147,5 +135,3 @@
     ,
     <a href="http://ananasblau.com/">Thomas R Koll</a>
     </p>
-    </div>
-    </div>
