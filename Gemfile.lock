@@ -1,12 +1,12 @@
 PATH
-  remote: /Volumes/Users/sven/Development/projects/adva-cms2/adva-blog
+  remote: /home/chris/work/projects/adva-cms2/adva-blog
   specs:
     adva-blog (0.0.1)
       adva-core
       truncate_html
 
 PATH
-  remote: /Volumes/Users/sven/Development/projects/adva-cms2/adva-cache
+  remote: /home/chris/work/projects/adva-cms2/adva-cache
   specs:
     adva-cache (0.0.1)
       adva-core
@@ -15,17 +15,16 @@ PATH
       reference_tracking (= 0.0.4)
 
 PATH
-  remote: /Volumes/Users/sven/Development/projects/adva-cms2/adva-core
+  remote: /home/chris/work/projects/adva-cms2/adva-core
   specs:
     adva-core (0.0.1)
       gem_patching (= 0.0.2)
       inherited_resources (= 1.1.2)
       inherited_resources_helpers (= 0.0.13)
-      kronn-has_many_polymorphs (= 3.0.0)
+      kronn-has_many_polymorphs (= 3.0.2)
       minimal (= 0.0.22)
-      nbrew-country_select (= 0.0.1)
       rails (= 3.0.0)
-      routing-filter (= 0.1.7)
+      routing-filter (= 0.2.0)
       silence_log_tailer (= 0.0.1)
       simple_form (= 1.2.2)
       simple_nested_set (= 0.0.15)
@@ -33,7 +32,7 @@ PATH
       simple_table (= 0.0.7)
 
 PATH
-  remote: /Volumes/Users/sven/Development/projects/adva-cms2/adva-markup
+  remote: /home/chris/work/projects/adva-cms2/adva-markup
   specs:
     adva-markup (0.0.1)
       RedCloth
@@ -41,7 +40,7 @@ PATH
       rdiscount
 
 PATH
-  remote: /Volumes/Users/sven/Development/projects/adva-cms2/adva-static
+  remote: /home/chris/work/projects/adva-cms2/adva-static
   specs:
     adva-static (0.0.1)
       adva-core
@@ -93,7 +92,7 @@ GEM
       has_scope (~> 0.5.0)
       responders (~> 0.6.0)
     inherited_resources_helpers (0.0.13)
-    kronn-has_many_polymorphs (3.0.0)
+    kronn-has_many_polymorphs (3.0.2)
       activerecord
     linecache (0.43)
     mail (2.2.5)
@@ -104,7 +103,6 @@ GEM
     minimal (0.0.22)
       actionpack (>= 3.0.0)
       activesupport (>= 3.0.0)
-    nbrew-country_select (0.0.1)
     nokogiri (1.4.3.1)
     polyglot (0.3.1)
     rack (1.2.1)
@@ -134,7 +132,7 @@ GEM
     rdiscount (1.6.5)
     reference_tracking (0.0.4)
     responders (0.6.2)
-    routing-filter (0.1.7)
+    routing-filter (0.2.0)
       actionpack
     ruby-debug (0.10.3)
       columnize (>= 0.1)
