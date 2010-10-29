@@ -13,7 +13,7 @@ We've focused a lot more on the framework part of the features that will enable 
 1. get a basic, minimalistic blog engine going
 2. use this as a use case for proving low-level framework and architecture features
 
-Similarly, we've also written stuff that already actually uses adva-cms2 but that we just can't publish as open source just yet. Amongst these things is adva-shop, which implements things like product catalogs and shopping carts.  adva-assets is a support engine that you probably know from the original adva-cms. We've used "adva-static":http://github.com/svenfuchs/adva-cms2/adva-static to export and publish a few static websites that we are maintaining. And finally we're also working on a project for a customer that uses and integrates all of this.
+Similarly, we've also written stuff that already actually uses adva-cms2 but that we just can't publish as open source just yet. Amongst these things is adva-shop, which implements things like product catalogs and shopping carts.  adva-assets is a support engine that you probably know from the original adva-cms. We've used "adva-static":http://github.com/svenfuchs/adva-cms2/tree/develop/adva-static/ to export and publish a few static websites that we are maintaining. And finally we're also working on a project for a customer that uses and integrates all of this.
 
 Doing so, we've gathered quite a few use cases for using different parts of adva-cms2 in various combinations. From what we've seen so far the system works out very nicely.
 
@@ -21,15 +21,17 @@ In the past, adva-cms already was built using quite a bunch of plugins and gems 
 
 We are really excited about now opening up the repository to the public.
 
-Keep in mind that it's a preview release though. You'll probably run into some problems and there are rough edges still need to be smoothed. But if you know what you're doing then you should be able to work with this code and understand our ideas and where we're heading.
+Keep in mind that it's a preview release though. You'll probably run into some problems and there are rough edges that still need to be smoothed. But if you know what you're doing then you should be able to work with this code and understand our ideas and where we're heading.
 
 Of course we very much appreciate any help with adva-cms2! Be it help with code, bug reports, documentation or just discussion about improving the concepts, we'd love to see you get involved.
 
-If you do want to contribute code, please notice that we're using "git-flow":http://github.com/nvie/gitflow as a development tool. If you're not familiar git-flow and don't care to learn about it, that's not a problem. All you really need, is to remember that all development is done in terms of 'feature' branches taken from the 'develop' branch. We don't develop on the master branch.
+If you do want to contribute code, please notice that we're using "git-flow":http://github.com/nvie/gitflow as a development tool. If you're not familiar with git-flow and don't care to learn about it, that's not a problem. All you really need, is to remember that all development is done in terms of 'feature' branches taken from the 'develop' branch. We don't develop on the master branch.
 
 So we hope you like adva-cms2 as much as we do, and if you have any questions about implementation, how to contribute, or things that you're not clear about, please post to the "mailinglist":http://groups.google.com/group/adva-cms or visit us in our IRC channel: "irc.freenode.net#adva-cms":irc://irc.freenode.net#adva-cms.
 
 We're glad to help!
+
+Again, here's the git repository: http://github.com/svenfuchs/adva-cms2:"http://github.com/svenfuchs/adva-cms2"
 
 !{width:40px}http://www.gravatar.com/avatar/402602a60e500e85f2f5dc1ff3648ecb!:http://svenfuchs.com !{width:40px}http://www.gravatar.com/avatar/5a7ada799c448f9c1e5eec02194b14e9!:http://blog.ingoweiss.com !{width:40px}http://www.gravatar.com/avatar/25393e08b802f62823636914f9297d20!:http://github.com/flooose !{width:40px}http://www.gravatar.com/avatar/b474b21a15938494d690805e9b319a12!:http://github.com/kronn !{width:40px}http://www.gravatar.com/avatar/9369b696c7fca2c188a52f562a1e3ff4!:http://github.com/rwrede !{width:40px}http://github.com/images/gravatars/gravatar-80.png!:http://github.com/johanness !{width:40px}http://www.gravatar.com/avatar/b2d40219b2c2bf3971f3ba4636300451!:http://github.com/michaxy
 
