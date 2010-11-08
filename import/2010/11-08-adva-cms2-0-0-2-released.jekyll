@@ -2,9 +2,7 @@
 title: adva-cms2 0.0.2 released.
 filter: textile
 ---
-Since we're working in sprints of 2 weeks we're also trying to follow a similar release cycle. This will of course mean fewer major changes, but also steadier stream of new features.
-
-To keep you all informed we'll at least send the changelog on a mailing list: link_to('mailinglist'), but of course if there is anything particularly noteworthy, you can always expect to find it mentioned.
+Since we're working in sprints of 2 weeks we're also trying to follow a similar release cycle. This will of course mean fewer major changes, but also steadier stream of new features. To keep you all informed of the changes, we'll at least send the changelog to "mailing list":http://groups.google.com/group/adva-cms, but of course if there is anything particularly noteworthy, you can always expect to find it mentioned here as well.
 
 So, on to the changes to for this release, 0.0.2
 
