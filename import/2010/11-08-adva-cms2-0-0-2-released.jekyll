@@ -1,0 +1,26 @@
+---
+title: adva-cms2 0.0.2 released.
+filter: textile
+---
+Since we're working in sprints of 2 weeks we're also trying to follow a similar release cycle. This will of course mean fewer major changes, but also steadier stream of new features.
+
+To keep you all informed we'll at least send the changelog on a mailing list: link_to('mailinglist'), but of course if there is anything particularly noteworthy, you can always expect to find it mentioned.
+
+So, on to the changes to for this release, 0.0.2
+
+First there were some I18n related changes: In order to keep the locale keys both "dry" and flexible we now support cascading fallbacks in views and have added a missing translation log that keeps you informed on all missing translations during test runs (cool).
+
+Also, it is now possible to reuse and extend existing menus from other engines and we've improved category menus to now work with polymorphic 'categorizable' models. The table tree drag & drop has been fixed in the section and categories trees and it also now has a spinner again.
+
+We've also improved the layout by including a sidebar block if it's present. Menus in general have been improved by adding missing I18n keys and changing the link order.
+
+Finally, we've also met with Konstantin Haase, who did an RSoC project about improving ActiveSupport::Dependencies. He gave us a few hints about how to fix our 'vertical code slices' approach and thus fix the development mode, too (which is currently broken).
+
+So, there you have it.
+
+Here's the link to the repository again: "http://github.com/svenfuchs/adva-cms2":http://github.com/svenfuchs/adva-cms2
+
+Have fun!
+
+!{width:40px}http://www.gravatar.com/avatar/402602a60e500e85f2f5dc1ff3648ecb!:http://svenfuchs.com !{width:40px}http://www.gravatar.com/avatar/5a7ada799c448f9c1e5eec02194b14e9!:http://blog.ingoweiss.com !{width:40px}http://www.gravatar.com/avatar/25393e08b802f62823636914f9297d20!:http://github.com/flooose !{width:40px}http://www.gravatar.com/avatar/b474b21a15938494d690805e9b319a12!:http://github.com/kronn !{width:40px}http://www.gravatar.com/avatar/9369b696c7fca2c188a52f562a1e3ff4!:http://github.com/rwrede !{width:40px}http://github.com/images/gravatars/gravatar-80.png!:http://github.com/johanness !{width:40px}http://www.gravatar.com/avatar/b2d40219b2c2bf3971f3ba4636300451!:http://github.com/michaxy
+
