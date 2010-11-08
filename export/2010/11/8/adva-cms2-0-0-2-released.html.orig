@@ -26,8 +26,12 @@
 
 </div>
 
+<<<<<<< HEAD
+<p>Since we&#8217;re working in sprints of 2 weeks we&#8217;re also trying to follow a similar release cycle. This will of course mean fewer major changes, but also steadier stream of new features. To keep you all informed of the changes, we&#8217;ll at least send the changelog to <a href="http://groups.google.com/group/adva-cms">mailing list</a>, but of course if there is anything particularly noteworthy, you can always expect to find it mentioned here as well.</p>
+=======
 <p>Since we&#8217;re working in sprints of 2 weeks we&#8217;re also trying to follow a similar release cycle. This will of course mean fewer major changes, but also steadier stream of new features.</p>
 <p>To keep you all informed we&#8217;ll at least send the changelog on a mailing list: link_to(&#8216;mailinglist&#8217;), but of course if there is anything particularly noteworthy, you can always expect to find it mentioned.</p>
+>>>>>>> 98339b0e9f5f9dcee3bed91843d6a5d8f5d2d6b6
 <p>So, on to the changes to for this release, 0.0.2</p>
 <p>First there were some I18n related changes: In order to keep the locale keys both &#8220;dry&#8221; and flexible we now support cascading fallbacks in views and have added a missing translation log that keeps you informed on all missing translations during test runs (cool).</p>
 <p>Also, it is now possible to reuse and extend existing menus from other engines and we&#8217;ve improved category menus to now work with polymorphic &#8216;categorizable&#8217; models. The table tree drag &amp; drop has been fixed in the section and categories trees and it also now has a spinner again.</p>

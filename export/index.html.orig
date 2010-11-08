@@ -26,7 +26,11 @@
 
 </div>
 
+<<<<<<< HEAD
+<div class="entry-content"><p>Since we&#8217;re working in sprints of 2 weeks we&#8217;re also trying to follow a similar release cycle. This will of course mean fewer major changes, but also steadier stream of new features. To keep you all informed of the changes, we&#8217;ll at least send the changelog to <a href="http://groups.google.com/group/adva-cms">mailing list</a>, but of course if there is anything particularly noteworthy, you can always expect to find it mentioned here as well.</p><p>So, on to the changes to for this release, 0.0.2</p><p>First there were some I18n related changes: …</p></div>
+=======
 <div class="entry-content"><p>Since we&#8217;re working in sprints of 2 weeks we&#8217;re also trying to follow a similar release cycle. This will of course mean fewer major changes, but also steadier stream of new features.</p><p>To keep you all informed we&#8217;ll at least send the changelog on a mailing list: link_to(&#8216;mailinglist&#8217;), but of course if there is anything particularly noteworthy, you can always expect to find it mentioned.</p><p>So, on to the changes to for this release, 0.0.2</p><p>First there were some I18n related …</p></div>
+>>>>>>> 98339b0e9f5f9dcee3bed91843d6a5d8f5d2d6b6
 <p><a href="/2010/11/8/adva-cms2-0-0-2-released" class="continue">Read the rest of this post</a>
 </p>
 </li>
