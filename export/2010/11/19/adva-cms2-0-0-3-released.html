@@ -28,27 +28,32 @@
 
 <p>In the last two weeks things here have continued to roll ahead.</p>
 <p>The 0.0.3 Tag has been pushed to Github and here&#8217;s a short summary of what&#8217;s changed in the last couple of weeks.</p>
-<p>Amongst other things we&#8217;ve extracted<br />
-<a href="https://github.com/svenfuchs/activesupport-slices">activesupport-slices</a> into a separate gem tagged as &#8220;lazy loaded vertical code slices based on ActiveSupport Dependencies&#8221;. See the <a href="https://github.com/svenfuchs/activesupport-slices">readme</a> for details.</p>
-<p>Also on framework level: we&#8217;ve reworked our &#8220;polymorphic url_for&#8221; extension which still needs some love, but now already supports multiple combinations of sti models. E.g. url_for([blog, post]) will check the following methods and use the first one the view responds to: blog_post_path, blog_content_path, section_post_path, section_content_path. This work eventually should lead to a Rails patch, which might have some good chances of <a href="https://rails.lighthouseapp.com/projects/8994-ruby-on-rails/tickets/2986-polymorphic_url-should-handle-sti-better">being accepted</a></p>
+<p>Amongst other things we&#8217;ve extracted <a href="https://github.com/svenfuchs/activesupport-slices">activesupport-slices</a> into a separate gem tagged as &#8220;lazy loaded vertical code slices based on ActiveSupport Dependencies&#8221;. See the <a href="https://github.com/svenfuchs/activesupport-slices">readme</a> for details.</p>
+<p>Also on framework level: we&#8217;ve reworked our &#8220;polymorphic url_for&#8221; extension which still needs some love, but now already supports multiple combinations of sti models. E.g. <code>url_for([blog, post])</code> will check the following methods and use the first one the view responds to: <code>blog_post_path</code>, <code>blog_content_path</code>, <code>section_post_path</code>, <code>section_content_path</code>. This work eventually should lead to a Rails patch, which might have some good chances of <a href="https://rails.lighthouseapp.com/projects/8994-ruby-on-rails/tickets/2986-polymorphic_url-should-handle-sti-better">being accepted</a></p>
 <p>Some of the I18n related changes we&#8217;ve mentioned in my last post were extracted to the <a href="https://github.com/svenfuchs/i18n-missing_translations">i18n-missing_translations</a> gem and will be part of the upcoming I18n 0.5.0 release and its Rails 3 integration respectively.</p>
-<p>Highlights:<br />
-*extract i18n-<a href="https://github.com/svenfuchs/i18n-missing_translations">i18n-missing_translations</a> to a separate gem<br />
-*extract <a href="https://github.com/svenfuchs/activesupport-slices">activesupport-slices</a> to a separate gem<br />
-*extract <a href="https://github.com/svenfuchs/adva-cms2/blob/develop/adva-core/lib/adva/active_record/has_one_default.rb">has_one_default</a> from application code<br />
-*extract <a href="https://github.com/svenfuchs/adva-cms2/blob/develop/adva-categories/lib/adva/active_record/categorizable.rb">ActiveRecord::Base.categorizable</a></p>
-<p>Minor changes:<br />
-*refactor blog_post route so we don&#8217;t need a fake route any more<br />
-*refactor polymorphic url_for<br />
-*refactor category url_helper_slice and fix reloading bug<br />
-*move flash from partial to base layout and fix missing user registration confirmation flash message<br />
-*add indices on categorizations</p>
-<p>Fixes:<br />
-*fix installation/new protection message<br />
-*fix Section#path method<br />
-*fix blog category pages so that posts assigned to a category&#8217;s subcategories are included<br />
-*temporary fix failing test setup (migrations seem to crash w/ default_scope and preloading slices)<br />
-*in adva test/setup require patches and register slice_paths before running migrations (because migrations might require files)gg</p>
+<h3>Highlights:</h3>
+<ul>
+	<li>extract i18n-<a href="https://github.com/svenfuchs/i18n-missing_translations">i18n-missing_translations</a> to a separate gem</li>
+	<li>extract <a href="https://github.com/svenfuchs/activesupport-slices">activesupport-slices</a> to a separate gem</li>
+	<li>extract <a href="https://github.com/svenfuchs/adva-cms2/blob/develop/adva-core/lib/adva/active_record/has_one_default.rb">has_one_default</a> from application code</li>
+	<li>extract <a href="https://github.com/svenfuchs/adva-cms2/blob/develop/adva-categories/lib/adva/active_record/categorizable.rb">ActiveRecord::Base.categorizable</a></li>
+</ul>
+<h3>Minor changes:</h3>
+<ul>
+	<li>refactor <code>blog_post</code> route so we don&#8217;t need a fake route any more</li>
+	<li>refactor polymorphic <code>url_for</code></li>
+	<li>refactor category <code>url_helper_slice</code> and fix reloading bug</li>
+	<li>move flash from partial to base layout and fix missing user registration confirmation flash message</li>
+	<li>add indices on categorizations</li>
+</ul>
+<h3>Fixes:</h3>
+<ul>
+	<li>fix installation/new protection message</li>
+	<li>fix <code>Section#path</code> method</li>
+	<li>fix blog category pages so that posts assigned to a category&#8217;s subcategories are included</li>
+	<li>temporary fix failing test setup (migrations seem to crash w/ default_scope and preloading slices)</li>
+	<li>in adva test/setup require patches and register slice_paths before running migrations (because migrations might require files)gg</li>
+</ul>
 </div>
 
 </div>

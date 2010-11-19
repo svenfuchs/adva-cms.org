@@ -1,0 +1,20 @@
+p > code, div > code { 
+  background-color: #f8f8ff;
+  border-bottom-color: #dedede;
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+  border-left-color: #dedede;
+  border-left-style: solid;
+  border-left-width: 1px;
+  border-right-color: #dedede;
+  border-right-style: solid;
+  border-right-width: 1px;
+  border-top-color: #dedede;
+  border-top-style: solid;
+  border-top-width: 1px;
+  color: #333333;
+  padding-bottom: 0px;
+  padding-left: 0.2em;
+  padding-right: 0.2em;
+  padding-top: 0px;
+}
