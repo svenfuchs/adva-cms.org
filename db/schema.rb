@@ -10,7 +10,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20101007000500) do
+ActiveRecord::Schema.define(:version => 20101109000000) do
 
   create_table "accounts", :force => true do |t|
   end
@@ -24,13 +24,14 @@ ActiveRecord::Schema.define(:version => 20101007000500) do
     t.integer  "site_id"
     t.integer  "section_id"
     t.string   "type"
-    t.string   "title",      :default => "", :null => false
-    t.string   "slug",       :default => "", :null => false
-    t.text     "body",       :default => "", :null => false
+    t.string   "title",        :default => "", :null => false
+    t.string   "slug",         :default => "", :null => false
+    t.text     "body",         :default => "", :null => false
     t.datetime "created_at"
     t.datetime "updated_at"
     t.string   "filter"
     t.text     "body_html"
+    t.datetime "published_at"
   end
 
   create_table "sections", :force => true do |t|

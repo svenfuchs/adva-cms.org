@@ -8,14 +8,14 @@ GIT
 PATH
   remote: /home/chris/work/projects/adva-cms2/adva-blog
   specs:
-    adva-blog (0.0.2)
+    adva-blog (0.0.3)
       adva-core
       truncate_html
 
 PATH
   remote: /home/chris/work/projects/adva-cms2/adva-cache
   specs:
-    adva-cache (0.0.2)
+    adva-cache (0.0.3)
       adva-core
       rack-cache-purge (= 0.0.2)
       rack-cache-tags (= 0.0.6)
@@ -24,7 +24,8 @@ PATH
 PATH
   remote: /home/chris/work/projects/adva-cms2/adva-core
   specs:
-    adva-core (0.0.2)
+    adva-core (0.0.3)
+      activesupport-slices (= 0.0.1)
       gem_patching (= 0.0.2)
       i18n-missing_translations (= 0.0.1)
       inherited_resources (= 1.1.2)
@@ -35,14 +36,14 @@ PATH
       routing-filter (= 0.2.0)
       silence_log_tailer (= 0.0.1)
       simple_form (= 1.2.2)
-      simple_nested_set (= 0.0.19)
+      simple_nested_set (= 0.0.20)
       simple_slugs (= 0.0.7)
-      simple_table (= 0.0.11)
+      simple_table (= 0.0.12)
 
 PATH
   remote: /home/chris/work/projects/adva-cms2/adva-markup
   specs:
-    adva-markup (0.0.2)
+    adva-markup (0.0.3)
       RedCloth
       adva-core
       rdiscount
@@ -50,7 +51,7 @@ PATH
 PATH
   remote: /home/chris/work/projects/adva-cms2/adva-static
   specs:
-    adva-static (0.0.2)
+    adva-static (0.0.3)
       adva-core
       nokogiri
       rack-cache
@@ -87,6 +88,7 @@ GEM
       activemodel (= 3.0.1)
       activesupport (= 3.0.1)
     activesupport (3.0.1)
+    activesupport-slices (0.0.1)
     arel (1.0.1)
       activesupport (~> 3.0.0)
     builder (2.1.2)
@@ -112,7 +114,7 @@ GEM
     minimal (0.0.22)
       actionpack (>= 3.0.0)
       activesupport (>= 3.0.0)
-    nokogiri (1.4.3.1)
+    nokogiri (1.4.4)
     polyglot (0.3.1)
     rack (1.2.1)
     rack-cache (0.5.3)
@@ -150,12 +152,12 @@ GEM
       linecache (>= 0.3)
     silence_log_tailer (0.0.1)
     simple_form (1.2.2)
-    simple_nested_set (0.0.19)
+    simple_nested_set (0.0.20)
       activerecord (~> 3.0.0)
       activesupport
       gem_patching
     simple_slugs (0.0.7)
-    simple_table (0.0.11)
+    simple_table (0.0.12)
       actionpack (~> 3.0.0)
       activesupport (~> 3.0.0)
     sqlite3-ruby (1.2.5)

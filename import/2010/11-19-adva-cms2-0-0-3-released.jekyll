@@ -1,0 +1,33 @@
+---
+title: adva-cms2 0.0.3 released.
+filter: textile
+---
+In the last two weeks things here have continued to roll ahead.
+
+The 0.0.3 Tag has been pushed to Github and here's a short summary of what's changed in the last couple of weeks.
+
+Amongst other things we've extracted "activesupport-slices":https://github.com/svenfuchs/activesupport-slices into a separate gem tagged as "lazy loaded vertical code slices based on ActiveSupport Dependencies". See the "readme":https://github.com/svenfuchs/activesupport-slices for details.
+
+Also on framework level: we've reworked our "polymorphic url_for" extension which still needs some love, but now already supports multiple combinations of sti models. E.g. url_for([blog, post]) will check the following methods and use the first one the view responds to: blog_post_path, blog_content_path, section_post_path, section_content_path. This work eventually should lead to a Rails patch, which might have some good chances of "being accepted":https://rails.lighthouseapp.com/projects/8994-ruby-on-rails/tickets/2986-polymorphic_url-should-handle-sti-better
+
+Some of the I18n related changes we've mentioned in my last post were extracted to the "i18n-missing_translations":https://github.com/svenfuchs/i18n-missing_translations gem and will be part of the upcoming I18n 0.5.0 release and its Rails 3 integration respectively.
+
+Highlights:
+*extract i18n-"i18n-missing_translations":https://github.com/svenfuchs/i18n-missing_translations to a separate gem
+*extract "activesupport-slices":https://github.com/svenfuchs/activesupport-slices to a separate gem
+*extract "has_one_default":https://github.com/svenfuchs/adva-cms2/blob/develop/adva-core/lib/adva/active_record/has_one_default.rb from application code
+*extract "ActiveRecord::Base.categorizable":https://github.com/svenfuchs/adva-cms2/blob/develop/adva-categories/lib/adva/active_record/categorizable.rb 
+
+Minor changes:
+*refactor blog_post route so we don't need a fake route any more
+*refactor polymorphic url_for
+*refactor category url_helper_slice and fix reloading bug
+*move flash from partial to base layout and fix missing user registration confirmation flash message
+*add indices on categorizations
+
+Fixes:
+*fix installation/new protection message
+*fix Section#path method
+*fix blog category pages so that posts assigned to a category's subcategories are included
+*temporary fix failing test setup (migrations seem to crash w/ default_scope and preloading slices)
+*in adva test/setup require patches and register slice_paths before running migrations (because migrations might require files)gg
