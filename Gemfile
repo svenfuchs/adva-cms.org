@@ -11,9 +11,9 @@ adva_cms.gem  'adva-static'
 adva_cms.gem  'adva-cache'
 adva_cms.gem  'adva-markup'
 
-gem 'i18n', :git => 'git://github.com/svenfuchs/i18n.git', :ref => '0.5.0'
+gem 'i18n', '0.5.0'
 
-gem 'rails', '3.0.1'
+gem 'rails', '3.0.3'
 gem 'sqlite3-ruby', '1.2.5'
 gem 'ruby-debug'
 

@@ -1,0 +1,11 @@
+---
+title: adva-cms2 0.0.4 released.
+filter: textile
+---
+Things haven't changed that much in this sprint. That's because we've had to focus on client projects and some engines that just haven't been released yet, but it's also shows that adva-cms2 is already pretty stable in what it's providing for us.
+
+Our main focus with the few changes to adva-cms2 was bumping Rails support to 3.0.3, which was released on November 16th. We've also changed a few minor things in adva-categories, which now seems to work fine in our customer's application.
+
+See you all next time.
+
+"http://github.com/svenfuchs/adva-cms2":http://github.com/svenfuchs/adva-cms2

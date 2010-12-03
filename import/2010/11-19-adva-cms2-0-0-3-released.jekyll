@@ -30,4 +30,4 @@ h3. Fixes:
 * fix @Section#path@ method
 * fix blog category pages so that posts assigned to a category's subcategories are included
 * temporary fix failing test setup (migrations seem to crash w/ default_scope and preloading slices)
-* in adva test/setup require patches and register slice_paths before running migrations (because migrations might require files)gg
+* in adva test/setup require patches and register slice_paths before running migrations (because migrations might require files)
