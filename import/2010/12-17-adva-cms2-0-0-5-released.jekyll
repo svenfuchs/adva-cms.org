@@ -1,0 +1,14 @@
+---
+title: adva-cms2 0.0.5 released.
+filter: textile
+---
+We've still been busy developing other projects that use adva-cms2, so this sprint we've just made some more small enhancements to help solidify the code base. Here they are:
+
+1. The admin edit page for categories now shows the name of the category in the header.
+2. We've patched webrat so that the 'within' method accepts xpaths (see "this ticket":https://webrat.lighthouseapp.com/projects/10503/tickets/153-within-should-support-xpath).
+3. The has_many_through_collection_checkboxes helper now generates item classes for checkboxes
+4. Updated simple_nested_set to 0.0.28
+
+See you next time!
+
+"http://github.com/svenfuchs/adva-cms2":http://github.com/svenfuchs/adva-cms2
