@@ -1,0 +1,9 @@
+---
+title: adva-cms2 0.0.6, The New Year Release
+filter: textile
+---
+So this our first release of 2011. It's still just minor enhancements though. We really just updated the README to let people know that adva-cms2 doesn't support Ruby 1.9.x yet and that there are issues with specific patch-level versions of Ruby, specifically patch-levels 1.8.7-p248 and 1.8.7-p249 don't work. If you're interested in the details, please refer to the "mailing list":http://groups.google.com/group/adva-cms.
+
+Until next time. Happy New Year! 
+
+"http://github.com/svenfuchs/adva-cms2":http://github.com/svenfuchs/adva-cms2
