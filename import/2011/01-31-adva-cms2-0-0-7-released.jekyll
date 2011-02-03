@@ -1,0 +1,22 @@
+---
+title: adva-cms2 0.0.7, The Bond, adva-Bond release
+filter: textile
+---
+Okay, there is no adva-Bond engine...yet, and adva-cms2 does continue to serve us well. This sprint there are more substantial changes to help us further develop our latest client projects and other not yet public engines. Here's the summary:
+
+* Improve support for ordering in controllers and cucumber steps (should be moved to models).
+* Move csrf_meta_tag to base layout.
+* Fix dependency to patched Arel version in simple_nested_set.
+* Allow nested tags in step_definition for: when i follow "foo" the the row where [header] is "bar"
+* Fix adva:engine generator to use resources (plural) in generated routes.rb
+* Fix tables_differ_messages
+* Fix "in no particular order" step
+* Fix timezonify transformation to not break when given date is blank or '-'
+* Reorganize test/test_helper.rb and features/env.rb files so that the engine generator works better for engines outside of the adva-cms2 repository
+* Extend common cucumber step to allow negation
+* Refactor common cucumber step for better failure message
+* Add an assert_html assertion (same thing as assert_select but the generated html can be passed manually)
+
+That's it! Until next time.
+
+"http://github.com/svenfuchs/adva-cms2":http://github.com/svenfuchs/adva-cms2

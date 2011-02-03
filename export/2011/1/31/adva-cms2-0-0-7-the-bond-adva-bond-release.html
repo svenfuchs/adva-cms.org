@@ -1,0 +1,57 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html><head><meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+<meta generator="adva-cms2" />
+<title>adva-cms</title>
+<link href="/stylesheets/adva-core/common/reset.css" media="screen" rel="stylesheet" type="text/css" />
+<link href="/stylesheets/adva-core/common/layout.css" media="screen" rel="stylesheet" type="text/css" />
+<link href="/stylesheets/adva-core/common/styles.css" media="screen" rel="stylesheet" type="text/css" />
+<link href="/stylesheets/adva-core/common/forms.css" media="screen" rel="stylesheet" type="text/css" />
+<link href="/stylesheets/adva-core/default/layout.css" media="screen" rel="stylesheet" type="text/css" />
+<link href="/stylesheets/adva-core/default/styles.css" media="screen" rel="stylesheet" type="text/css" />
+<link href="/stylesheets/adva-blog/default/styles.css" media="screen" rel="stylesheet" type="text/css" />
+
+<meta name="csrf-param" content="authenticity_token"/>
+<meta name="csrf-token" content="Giqs0OZAp4xElfuktQLh2zi0N2jkJUx2SwHyoc7eozI="/>
+
+</head>
+<body><div id="page"><div id="header"><h1>adva-cms</h1>
+<ul id="menu"><li class="active"><a href="/">Home</a>
+</li>
+<li><a href="/wiki">Wiki</a>
+</li>
+</ul>
+
+</div>
+<div id="main"><div class="post"><h2><a href="/2011/1/31/adva-cms2-0-0-7-the-bond-adva-bond-release" class="entry-title" rel="bookmark">adva-cms2 0.0.7, The Bond, adva-Bond release</a>
+</h2>
+<div class="meta">posted on <abbr class="updated" title="2011-01-31 00:00:00 UTC">Mon, 31 Jan 2011</abbr>
+
+</div>
+
+<p>Okay, there is no adva-Bond engine&#8230;yet, and adva-cms2 does continue to serve us well. This sprint there are more substantial changes to help us further develop our latest client projects and other not yet public engines. Here&#8217;s the summary:</p>
+<ul>
+	<li>Improve support for ordering in controllers and cucumber steps (should be moved to models).</li>
+	<li>Move csrf_meta_tag to base layout.</li>
+	<li>Fix dependency to patched Arel version in simple_nested_set.</li>
+	<li>Allow nested tags in step_definition for: when i follow &#8220;foo&#8221; the the row where [header] is &#8220;bar&#8221;</li>
+	<li>Fix adva:engine generator to use resources (plural) in generated routes.rb</li>
+	<li>Fix tables_differ_messages</li>
+	<li>Fix &#8220;in no particular order&#8221; step</li>
+	<li>Fix timezonify transformation to not break when given date is blank or &#8216;-&#8217;</li>
+	<li>Reorganize test/test_helper.rb and features/env.rb files so that the engine generator works better for engines outside of the adva-cms2 repository</li>
+	<li>Extend common cucumber step to allow negation</li>
+	<li>Refactor common cucumber step for better failure message</li>
+	<li>Add an assert_html assertion (same thing as assert_select but the generated html can be passed manually)</li>
+</ul>
+<p>That&#8217;s it! Until next time.</p>
+<p><a href="http://github.com/svenfuchs/adva-cms2">http://github.com/svenfuchs/adva-cms2</a></p>
+</div>
+
+</div>
+</div>
+<div id="footer"><ul class="left"><li>Made with <a href="http://github.com/svenfuchs/adva-cms2">adva cms 2</a></li>
+</ul>
+<ul class="right"></ul>
+</div>
+</body>
+</html>
