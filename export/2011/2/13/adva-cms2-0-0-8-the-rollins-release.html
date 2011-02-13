@@ -11,69 +11,33 @@
 <link href="/stylesheets/adva-blog/default/styles.css" media="screen" rel="stylesheet" type="text/css" />
 
 <meta name="csrf-param" content="authenticity_token"/>
-<meta name="csrf-token" content="dpre+HdioxVimW6Qra0vAXSLa8rYa9t9OTQklAKrH2s="/>
+<meta name="csrf-token" content="g5KZLbg10JjaEI6DG3CzbSQv6G0zUTHb1b/1dT3btYQ="/>
 
 </head>
 <body><div id="page"><div id="header"><h1>adva-cms</h1>
 <ul id="menu"><li class="active"><a href="/">Home</a>
 </li>
-<li class="active"><a href="/wiki">Wiki</a>
+<li><a href="/wiki">Wiki</a>
 </li>
 </ul>
 
 </div>
-<div id="main"><div id="wikipage_1" class="entry clearing">
-
-<div class="content">
-
-<h2>Getting started</h2>
-
-<p>Getting started with adva cms is pretty simple.</p>
-
-<p>
-
-Just follow
-
-<a href="http://github.com/svenfuchs/adva_cms/tree/master">
-
-<span class="caps">README</span>
-
-</a>
-
-instructions and you are done!
-
-</p>
+<div id="main"><div class="post"><h2><a href="/2011/2/13/adva-cms2-0-0-8-the-rollins-release" class="entry-title" rel="bookmark">adva-cms2 0.0.8, The Rollins Release</a>
+</h2>
+<div class="meta">posted on <abbr class="updated" title="2011-02-13 00:00:00 UTC">Sun, 13 Feb 2011</abbr>
 
 </div>
 
-<div class="wiki meta">
-
-<ul class="links">
-
-<li>
-
-<a href="/wiki/wikipages">all pages</a>
-
-</li>
-
-<li>
-
-<a href="/wiki">return to home</a>
-
-</li>
-
+<p>Happy birthday <a href="http://en.wikipedia.org/wiki/Henry_Rollins">Henry Rollins</a>. Like you, adva-cms2 rises above. Here are the awesome, ass-kicking changes for this sprint:</p>
+<ul>
+	<li>don&#8217;t encrypt passwords in test runs (see http://oinopa.com/2011/02/05/want-a-faster-test-suite.html)</li>
+	<li>refactor adva:static:setup task to use overloadable methods (so we can configure git user.name and user.email in unit tests for running builds on systems that don&#8217;t have git configured properly)</li>
+	<li>fix test_helper inclusion in adva:static unit tests</li>
+	<li>fix tables_differ_message</li>
 </ul>
-
-<p>  revision: 1
-
-last updated: May 29, 2009 13:10
-
-by: </p>
-
+<p>Okay, admittedly it&#8217;s sort of a small release, but the changes will come in handy, we promise.</p>
+<p><a href="http://github.com/svenfuchs/adva-cms2">http://github.com/svenfuchs/adva-cms2</a></p>
 </div>
-
-</div>
-
 
 </div>
 </div>

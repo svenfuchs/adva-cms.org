@@ -1,0 +1,14 @@
+---
+title: adva-cms2 0.0.8, The Rollins Release
+filter: textile
+---
+Happy birthday "Henry Rollins":http://en.wikipedia.org/wiki/Henry_Rollins. Like you, adva-cms2 rises above. Here are the awesome, ass-kicking changes for this sprint:
+
+* don't encrypt passwords in test runs (see http://oinopa.com/2011/02/05/want-a-faster-test-suite.html)
+* refactor adva:static:setup task to use overloadable methods (so we can configure git user.name and user.email in unit tests for running builds on systems that don't have git configured properly)
+* fix test_helper inclusion in adva:static unit tests
+* fix tables_differ_message
+
+Okay, admittedly it's sort of a small release, but the changes will come in handy, we promise.
+
+"http://github.com/svenfuchs/adva-cms2":http://github.com/svenfuchs/adva-cms2

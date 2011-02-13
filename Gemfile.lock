@@ -1,14 +1,14 @@
 PATH
   remote: /home/chris/work/projects/adva-cms2/adva-blog
   specs:
-    adva-blog (0.0.7)
+    adva-blog (0.0.8)
       adva-core
       truncate_html
 
 PATH
   remote: /home/chris/work/projects/adva-cms2/adva-cache
   specs:
-    adva-cache (0.0.7)
+    adva-cache (0.0.8)
       adva-core
       rack-cache-purge (= 0.0.2)
       rack-cache-tags (= 0.0.6)
@@ -17,7 +17,7 @@ PATH
 PATH
   remote: /home/chris/work/projects/adva-cms2/adva-core
   specs:
-    adva-core (0.0.7)
+    adva-core (0.0.8)
       activesupport-slices (= 0.0.2)
       gem-patching (= 0.0.3)
       i18n (= 0.5.0)
@@ -37,7 +37,7 @@ PATH
 PATH
   remote: /home/chris/work/projects/adva-cms2/adva-markup
   specs:
-    adva-markup (0.0.7)
+    adva-markup (0.0.8)
       RedCloth
       adva-core
       rdiscount
@@ -45,7 +45,7 @@ PATH
 PATH
   remote: /home/chris/work/projects/adva-cms2/adva-static
   specs:
-    adva-static (0.0.7)
+    adva-static (0.0.8)
       adva-core
       nokogiri
       rack-cache
