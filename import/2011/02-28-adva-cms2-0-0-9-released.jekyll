@@ -1,0 +1,15 @@
+---
+title: adva-cms2 0.0.9, The Wish it was a leap year release
+filter: textile
+---
+Yeah, we'd postpone this sprint's release if it meant that we could make a release on February, 29. Because of deadlines for clients, we haven't been able to roll into a new sprint anyway; I'm just sayin', it would be a lot cooler to legitimize new sprint delays with a leap year :)
+
+Anyway, here are the changes:
+
+* adva-cms2 is now tested on "Travis":http://travis-ci.org/! (see "http://travis-ci.org/svenfuchs/adva-cms2":http://travis-ci.org/svenfuchs/adva-cms2 and check out the build status button at the "adva-cms2 repository":https://github.com/svenfuchs/adva-cms2/blob/develop/README.textile)
+* adva-blog finally has an atom feed
+* adva-static: allow an optional config/static.yml file to specify start urls for export crawling (e.g. in order to add the atom feed)
+* speed up tests a little using a plain encryptor for devise (i.e. don't encrypt passwords in tests), see [http://oinopa.com/2011/02/05/want-a-faster-test-suite.html]
+* fix Arel to 2.0.7 until simple_nested_set works with the current Arel version (2.0.8)
+
+"http://github.com/svenfuchs/adva-cms2":http://github.com/svenfuchs/adva-cms2
